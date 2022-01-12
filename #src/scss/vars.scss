@@ -1,0 +1,211 @@
+//variables
+:root {
+    --bcg: #15181A;
+    --accent-color: #EB5757;
+    --accent-grey: #252B2E;
+    --container-width: 75vw;
+    --light-background: #1d2124;
+    --padding-blur-border: 6.25vw;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --container-width: 100%;
+        --padding-blur-border: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --container-width: 1440px;
+    }
+}
+
+$maxWidth: 1920;
+$breakpoint-xl: 1440px;
+$breakpoint-lg: 1170px;
+$breakpoint-md: 960px;
+$breakpoint-sm: 780px;
+$breakpoint-xs: 560px;
+$breakpoint-mobile: 420px;
+
+//functions
+@function get-vw($font) {
+    $vw-context: calc($maxWidth * 0.01 * 1px);
+    @return calc($font / $vw-context * 1vw);
+    @return $font;
+}
+
+//mixins
+@mixin adaptive-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
+//usage @include child-counter('> li', '', '\a'){}
+@mixin child-counter($child-selector, $content-before:'', $content-after:'') {
+    $counter: unique-id();
+    list-style-type: none;
+    counter-reset: $counter;
+
+    & #{$child-selector} {
+        counter-increment: $counter;
+
+        &:before {
+            content: '#{$content-before}'counter($counter) '#{$content-after}';
+            @content;
+        }
+    }
+}
+
+@mixin xl() {
+    @media (max-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media (max-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media (max-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media (max-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin xs() {
+    @media (max-width: $breakpoint-xs) {
+        @content;
+    }
+}
+
+@mixin mob() {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin reset {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+//clases for @extend
+.e-blur-bcg {
+    background-color: #1d21247d;
+    width: calc((100vw - var(--container-width)) / 2);
+    backdrop-filter: blur(12px);
+
+    @supports(backdrop-filter: blur(12px)) {
+        filter: blur(12px);
+    }
+
+    @include md() {
+        @include reset;
+    }
+}
+
+.e-pseudo {
+    content: '';
+    position: absolute;
+}
+
+.e-flex {
+    display: flex;
+}
+
+.e-flex-center {
+    @extend .e-flex-align-center;
+    justify-content: center
+}
+
+.e-flex-align-center {
+    @extend .e-flex;
+    align-items: center;
+}
+
+.e-between {
+    @extend .e-flex;
+    justify-content: space-between;
+}
+
+.e-container {
+    max-width: var(--container-width);
+    flex-grow: 1;
+    z-index: 2;
+}
+
+.e-section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @media(max-width: 1200px) {
+        padding-left: 50px !important;
+        padding-right: 30px !important;
+    }
+
+    @include lg() {
+        padding-bottom: 90px;
+        padding-top: 90px;
+    }
+
+    @include md() {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    @include sm() {
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+
+    @include xs() {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        padding-left: 35px !important;
+        padding-right: 20px !important;
+    }
+}
+
+.b-separator {
+    margin-bottom: 40px;
+
+    @include md() {
+        margin-bottom: 20px;
+    }
+}
+
+.b-inline-pad-none-xl {
+    @include xl() {
+        padding-left: 10px !important;
+        padding-right: 0 !important;
+    }
+}

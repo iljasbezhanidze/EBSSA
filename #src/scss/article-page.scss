@@ -1,0 +1,115 @@
+.b-article-page {
+    height: 72vh;
+    display: flex;
+
+    & .b-first-screen {
+        height: initial;
+        margin-top: auto;
+    }
+}
+
+.b-title-box__img {
+    width: get-vw(680px);
+    height: get-vw(680px);
+
+    @include sm() {
+        display: flex;
+        min-height: 100%;
+        object-fit: cover;
+    }
+
+    @media(max-width: 640px) {
+        display: none;
+    }
+}
+
+.b-article-page {
+    & .b-title-box {
+        padding-top: get-vw(100px);
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 80px;
+    }
+
+    @media(max-width: 1200px) {
+        padding-left: 45px;
+        padding-right: 30px;
+    }
+
+    & .b-first-screen__content {
+        @include sm() {
+            align-items: stretch;
+        }
+
+        @media(max-width: 640px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    & .b-title-box__text {}
+
+    & .b-title-box__title {
+        margin-bottom: get-vw(120px);
+
+        @media(max-width: 640px) {
+            bottom: 80px;
+        }
+    }
+
+    & .b-main-title {}
+
+    & .b-main-title_line {}
+
+    & .b-title-box__footer {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    & .b-title-box__date-wrapper {}
+
+    & .b-title-box__date-title {
+        margin-bottom: 20px;
+        @include adaptive-font(24, 20);
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    & .b-title-box__date {
+        font-size: 18px;
+        opacity: 0.6;
+        line-height: 1.6;
+    }
+
+    & .b-title-box__tag-wrapper {}
+
+    & .b-title-box__tag-title {
+        margin-bottom: 20px;
+        @include adaptive-font(24, 20);
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    & .b-title-box__tag {
+        font-size: 18px;
+        opacity: 0.6;
+        line-height: 1.6;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+
+    & .b-title-box__img {}
+}
+
+
+.b-article-content__media iframe,
+.b-article-content__media .b-video__preview {
+    min-width: 100vw;
+}
+
+.b-article-content__media_margin-none {
+    margin-top: 0;
+    margin-bottom: 0;
+}

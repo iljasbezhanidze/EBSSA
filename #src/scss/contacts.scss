@@ -1,0 +1,102 @@
+.b-contacts-page {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: get-vw(80px);
+
+    @include md() {
+        flex-direction: column;
+        min-width: 100%;
+
+        & .b-form-section {
+            max-width: 100%;
+        }
+    }
+
+}
+
+.b-contacts-page__col {
+    @include md() {
+        min-width: 100%;
+    }
+}
+
+.b-departaments {}
+
+.b-departaments__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: get-vw(80px);
+}
+
+.b-departament {}
+
+.b-departaments__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc((var(--container-width) / 3) - get-vw(80px) * 2);
+
+    @media(max-width: 1000px) {
+        flex: 1 1 calc((var(--container-width) / 2) - get-vw(80px));
+
+        @include sm() {
+            flex-basis: 100%;
+        }
+    }
+
+    @include mob() {
+        row-gap: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.b-departament__punkt {
+    width: fit-content;
+    font-size: 18px;
+    position: relative;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: 400;
+
+    &:after {
+        @extend .e-pseudo;
+        transition: all .4s ease-out .2s;
+        bottom: .3rem;
+        left: 0;
+        right: 100%;
+        height: 1px;
+        background-color: #fff;
+        display: block;
+    }
+
+    &:hover:after {
+        right: 0;
+    }
+
+    @include sm() {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    @include mob() {
+        line-height: 1.6;
+        font-size: 13px;
+    }
+}
+
+.b-departament__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    @include sm() {
+        font-size: 18px;
+    }
+}
+
+.b-departament__mail {}
+
+.b-departament__phone {}
+
+.b-departament__ap-link {}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <title>EBSSA</title>
+</head>
+
+<body>
+    <img class="b-side-frame" src="img/side-frame.svg">
+    <!-- [data-graph-path="value"] data дял открытия
+[data-graph-target="value"] data самого окна -->
+
+<div class="modal">
+    <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="first-modal">
+        <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="b-modal-content">
+            <div class="b-modal-content__nav">
+                <div class="b-modal-content__title">Contacts width EBSSA</div>
+                <form class="b-form b-form_modal b-form-section__wrapper">
+                    <div class="b-form__row">
+                        <div class="b-form__item">
+                            <label class="b-form__label" for="name">Name *</label>
+                            <input class="b-form__input b-form__input_name" type="text" id="name" placeholder="Name"
+                                required="" autocomplete="off">
+                        </div>
+                        <div class="b-form__item">
+                            <label class="b-form__label" for="number">Email *</label>
+                            <input class="b-form__input b-form__input_email" type="text" id="number"
+                                placeholder="petergrifin@putucketbrewery.com" required="" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="b-form__row">
+                        <div class="b-form__item">
+                            <label class="b-form__label" for="text">Message</label>
+                            <textarea class="b-form__textarea" name="" id="" cols="30" rows="10"
+                                placeholder="Message..."></textarea>
+                        </div>
+                    </div>
+                    <div class="b-form__checkbox b-check">
+                        <div class="b-check__checkbox-inner">
+                            <input class="b-check__checkbox" type="checkbox" id="check" required="">
+                            <label class="b-check__label" for="check"></label>
+                            <div class="b-check__agr">
+                                <a class="b-check__text" href="#">I agree to the processing of</a>
+                                <a class="b-check__link" href="#">personal data</a>
+                            </div>
+                        </div>
+                        <button class="b-form__btn b-btn b-btn_arrow" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <main class="b-page">
+        <div class="b-page__header b-page__header_static">
+            <div class="b-page__header-container">
+                <header class="b-header">
+
+    <img class="b-header__logo b-header__logo_mob b-logo b-logo_header" src="img/logo-header.png"></img>
+
+    <button class="b-burger" type="button">
+        <span class="b-burger__line b-burger__line_open"></span>
+        <span class="b-burger__line b-burger__line_close"></span>
+    </button>
+
+    <nav class="b-header__nav">
+        <!-- left menu -->
+        <ul class="b-menu-list b-header__menu b-header__menu_main">
+            <li class="b-menu-list__item">
+                <a href="index.html" class="b-menu-list__link">Home</a>
+            </li>
+            <li class="b-menu-list__item">
+                <a href="courses.html" class="b-menu-list__link">Courses</a>
+            </li>
+            <li class="b-menu-list__item">
+                <a href="#" class="b-menu-list__link">Facilities</a>
+            </li>
+            <li class="b-menu-list__item">
+                <a href="#" class="b-menu-list__link">Graduates</a>
+            </li>
+        </ul>
+
+        <!-- fixed logo -->
+        <img class="b-header__logo b-header__logo_in-menu b-logo b-logo_header" src="img/logo-header.png"></img>
+
+        <!-- right menu -->
+        <ul class="b-menu-list b-header__menu b-header__menu_sub">
+            <li class="b-menu-list__item">
+                <a href="#" class="b-menu-list__link">About</a>
+            </li>
+            <li class="b-menu-list__item">
+                <a href="#" class="b-menu-list__link">Contact</a>
+            </li>
+            <li class="b-menu-list__item b-menu-list__item_btn">
+                <a href="#" class="b-btn b-btn_sm">Course schedule</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+            </div>
+        </div>
+        <div class="b-main b-page__content">
+            <section class="b-main__section">
+                <div class="b-main__container">
+                    <div class="b-gallery-preview">
+                        <h1 class="b-gallery-preview__nav-title b-main-title b-main-title_line">
+                            Gallery
+                        </h1>
+                        <ul class="b-gallery-preview__list">
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list1.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">Close
+                                    protection course</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">71</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list2.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">Privat
+                                    military contractors course</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">12</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list3.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">PSD in high
+                                    risk areas</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">32</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list4.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">Our
+                                    facilities</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">7</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list5.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">Instructir
+                                    course’s</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">16</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="b-page__footer">
+            <div class="b-page__container">
+                <footer class="b-footer">
+    <div class="b-footer__top">
+        <nav class="b-footer__nav b-footer__nav_info">
+            <ul class="b-menu-list b-header__nav-list">
+                <li class="b-menu-list__item b-menu-list__item_title">
+                    <h3 class="b-menu-list__title">Information</h3>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">Instructor’s Verification</a>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">Course Regulation</a>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">News</a>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">Gallery</a>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">About</a>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">Graduates</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="b-footer__nav b-footer__nav_train">
+            <ul class="b-menu-list b-header__nav-list">
+                <li class="b-menu-list__item b-menu-list__item_title">
+                    <h3 class="b-menu-list__title">Training</h3>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">Schedule And Prices</a>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">Mobile Training Team</a>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">Online courses</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="b-footer__nav b-footer__nav_social b-footer__socials">
+            <ul class="b-menu-list b-header__nav-list">
+                <li class="b-menu-list__item b-menu-list__item_title">
+                    <h3 class="b-menu-list__title">Social Networks</h3>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">Facebook</a>
+                </li>
+                <li class="b-menu-list__item">
+                    <a href="#" class="b-menu-list__link">YouTube</a>
+                </li>
+            </ul>
+        </div>
+        <div class="b-contacts b-footer__contacts">
+            <ul class="b-contacts__list b-header__nav-list">
+                <li class="b-contacts__item b-contacts__list-item_title">
+                    <h3 class="b-cotacts__list-title">Contact</h3>
+                </li>
+                <li class="b-contacts__list-item">
+                    <a href="tel:+393421872010" class="b-contacts__link">+39 (342) 187-20-10</a>
+                </li>
+                <li class="b-contacts__list-item">
+                    <a href="mailto:office@ebssa.net" class="b-contacts__link">office@ebssa.net</a>
+                </li>
+            </ul>
+            <ul class="b-socials b-cotacts__socials">
+                <li class="b-socials__item">
+                    <a class="b-socials__link" href="#">
+                        <img class="b-socials__icon" src="img/telegram.svg" alt="link to our social page in telegram">
+                    </a>
+                </li>
+                <li class="b-socials__item">
+                    <a class="b-socials__link" href="#">
+                        <img class="b-socials__icon" src="img/viber.svg" alt="link to our social page in viber">
+                    </a>
+                </li>
+                <li class="b-socials__item">
+                    <a class="b-socials__link" href="#">
+                        <img class="b-socials__icon" src="img/instagram.svg" alt="link to our social page in instagram">
+                    </a>
+                </li>
+                <li class="b-socials__item">
+                    <a class="b-socials__link" href="#">
+                        <img class="b-socials__icon" src="img/facebook.svg" alt="link to our social page in facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="b-partners b-footer__partners">
+            <li class="b-partners"><img class="b-partners__logo" src="img/partners.png" alt="logo our partner"></li>
+        </ul>
+    </div>
+    <div class="b-footer__bottom">
+        <p class="b-footer__bottom-left">© European Bodyguard and Security Service Association LLC. All Right Reserved
+        </p>
+        <p class="b-footer__bottom-right">Made by TOTONIS</p>
+    </div>
+</footer>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

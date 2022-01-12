@@ -1,0 +1,76 @@
+.b-about-first-screen {}
+
+.b-about-first-screen__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+
+    &:not(:last-child) {
+        margin-bottom: 80px;
+
+        @include md() {
+            margin-bottom: 50px;
+        }
+
+        @include mob() {
+            margin-bottom: 30px;
+        }
+    }
+
+    @include sm() {
+        flex-wrap: wrap;
+    }
+}
+
+.b-about-first-screen__col {
+    max-width: 680px;
+    height: auto;
+    flex: 1 1 47%;
+
+    @include sm() {
+        width: 100%;
+    }
+}
+
+
+.b-about-first-screen__nav-title {}
+
+.b-main-title {}
+
+.b-main-title_line {}
+
+.b-about-first-screen__text {
+    @include adaptive-font(18, 16)
+}
+
+.b-about-first-screen__text_accent {
+    @include adaptive-font(22, 18)
+}
+
+.b-about-first-screen__video {
+    min-width: 100%;
+
+    & iframe {
+        min-width: 100% !important;
+        height: auto;
+        aspect-ratio: 16/9;
+        // transform: translateX(-49px);
+        border: none;
+    }
+
+
+    @include sm() {
+        & .b-video__preview {
+            // transform: translateX(-34px);
+            // min-width: 100vw;
+        }
+    }
+
+    @include xs() {
+        transform: translateX(0);
+    }
+
+    & .b-video__play {}
+
+    & .b-video-play-btn {}
+}

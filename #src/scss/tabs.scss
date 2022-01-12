@@ -1,0 +1,256 @@
+.b-map {}
+
+.b-tabs {}
+
+.b-map__tabs {}
+
+.b-tabs__nav-head {
+    @extend .e-between;
+    position: relative;
+    z-index: 9;
+    max-width: 1440px;
+    align-items: flex-start;
+
+    @include md() {
+        flex-direction: column;
+    }
+}
+
+.b-tabs__title {
+    max-width: 356px;
+    margin-bottom: 6.25vw;
+
+    @include md() {
+        max-width: 100%;
+        margin-bottom: 12vw;
+    }
+}
+
+.b-title {}
+
+.b-tabs__buttons {
+    border: 2px solid #252B2E;
+    @extend .e-flex-align-center;
+    border-radius: 80px;
+
+    @include md() {
+        margin-bottom: 60px;
+    }
+
+    @include sm() {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.b-tabs__select {
+    @extend .e-flex-align-center;
+    padding: 15px 60px;
+    border-radius: 80px;
+    opacity: .4;
+    transition: all .2s;
+    font-size: 16px;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &.active {
+        background-color: var(--accent-grey);
+        opacity: 1;
+    }
+
+    @include lg() {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @include sm() {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: auto;
+        padding-right: auto;
+        width: 33%;
+    }
+
+    @include mob() {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.b-tabs__icon {
+    margin-right: 10px;
+
+    @include sm() {
+        display: none;
+    }
+}
+
+.b-tabs__location {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px !important;
+
+    @include mob() {
+        font-size: 14px !important;
+    }
+}
+
+.b-tabs__body {
+    display: none;
+    column-gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm() {
+        flex-direction: column-reverse;
+    }
+}
+
+.b-tabs__body.active {
+    display: flex;
+
+}
+
+
+.b-tabs__locations {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: get-vw(120px);
+
+    @include child-counter('> li', '', '\a') {
+        width: 50px;
+        height: 50px;
+        border: 4px solid var(--accent-grey);
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -70px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include xs() {
+            left: -60px;
+        }
+
+        @include mob() {
+            width: 40px;
+            height: 40px;
+            left: -48px;
+        }
+    }
+
+    @include sm() {
+        display: table-cell;
+        column-count: 2;
+        -webkit-column-width: 160px;
+        -moz-column-width: 160px;
+        column-width: 160px;
+        padding-bottom: 40px;
+        vertical-align: top;
+    }
+
+    @media(max-width: 510px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.b-tabs__locations-punkt {
+    line-height: 1.6;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 70px;
+    position: relative;
+    margin-bottom: 5px;
+
+    @include sm() {
+        vertical-align: top;
+    }
+
+    @media(max-width: 420px) {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+
+    @media(max-width: 360px) {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+.b-tabs__locations>li.b-tabs__locations-punkt_primary:before {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+
+}
+
+.b-tabs__locations>li.b-tabs__locations-punkt_secondary:before {
+    background-color: var(--accent-grey);
+}
+
+
+
+.b-tabs__btn-more {
+    max-width: 415px;
+
+    @include sm() {
+        max-width: 300px;
+        margin-bottom: 50px;
+    }
+
+    @include mob() {
+        max-width: 260px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.b-btn {}
+
+.b-btn_arrow {}
+
+.b-tabs__background {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    width: 67.71vw;
+    height: 53.1vw;
+    margin-right: -6.25vw;
+
+    @media(max-width: 1270px) {
+        margin-right: -4.25vw;
+    }
+
+    @include md() {
+        margin-right: 2.25vw;
+        position: absolute;
+        right: 0;
+        top: 61%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    @include sm() {
+        position: static;
+        transform: translateY(0);
+        width: 80vw;
+        height: 70vw;
+        margin-right: 0;
+    }
+}
+
+.b-tabs__inner {
+    z-index: 2;
+}

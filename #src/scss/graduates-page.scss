@@ -1,0 +1,170 @@
+.b-warior-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    column-gap: get-vw(80px);
+
+    @include sm() {
+        flex-direction: column;
+    }
+}
+
+.b-warior-info__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc((var(--container-width) / 2) - get-vw(80px));
+
+    @include sm() {
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+
+    @include xs() {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.b-warior-info__nav-title {}
+
+.b-main-title {}
+
+.b-main-title_line {}
+
+.b-warior-info__history {
+    @include adaptive-font(24, 16);
+    line-height: 160%;
+}
+
+.b-warior-info__photo {
+    @include xs() {
+        min-width: 100vw;
+        position: relative;
+        left: -8px;
+    }
+}
+
+.b-dossier {
+    width: 100%;
+
+}
+
+.b-dossier__nav-title {}
+
+.b-dossier-table {
+    width: 100%;
+    @include adaptive-font(24, 16);
+    font-weight: 400;
+    line-height: 1.6;
+
+}
+
+.b-dossier__wrapper {
+
+    @include sm() {
+        min-width: 100vw;
+        position: relative;
+        left: -35px;
+    }
+}
+
+.b-dossier-table__row {
+    padding: 40px;
+    background-color: var(--bcg);
+    margin-bottom: 10px;
+    display: flex;
+    column-gap: 40px;
+
+    @include sm() {
+        padding: 30px;
+    }
+
+    @include xs() {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.b-dossier-table_stats {
+    flex: 1 1 35%;
+}
+
+.b-dossier-table_value {}
+
+.b-person-review__wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: get-vw(80px);
+
+    @include sm() {
+        flex-direction: column;
+    }
+}
+
+.b-person-review {}
+
+.b-person-review__nav-title {}
+
+.b-title {}
+
+.b-person-review__col {
+    flex: 1 1 calc((var(--container-width) / 2) - get-vw(80px));
+
+    @include sm() {
+        flex-basis: 100%;
+    }
+
+    & p,
+    & ul,
+    & ol {
+        margin-bottom: 20px;
+    }
+
+    & ol,
+    & ul {
+        padding-left: 20px;
+    }
+
+    &>* {
+        font-size: 18px;
+        line-height: 1.8;
+
+        @include xs() {
+            font-size: 16px;
+        }
+
+        @include mob() {
+            font-size: 14px;
+        }
+    }
+
+    &>ul,
+    &>ol {
+        list-style: initial !important;
+    }
+}
+
+.b-contacts-nav {
+    display: flex;
+    width: 100%;
+}
+
+.b-contacts-nav__btn {}
+
+.b-contacts-nav__btn_contact {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: 40px;
+
+    @include mob() {
+        margin-right: 20px;
+    }
+}
+
+.b-contacts-nav__btn_hire {
+    margin-right: auto;
+}

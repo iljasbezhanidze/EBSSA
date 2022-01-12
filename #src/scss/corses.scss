@@ -1,0 +1,22 @@
+.b-corses-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.b-corses-page__title {
+    @extend [class*="__nav-title"];
+}
+
+.b-corses-page__buttons {
+    max-width: 1050px;
+}
+
+.b-main__tab-content {
+    display: none;
+
+    &.active {
+        display: block !important;
+    }
+}

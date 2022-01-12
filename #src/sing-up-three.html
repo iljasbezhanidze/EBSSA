@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <title>EBSSA</title>
+</head>
+
+<body>
+    @@include('html/side-frame.html')
+    @@include('html/modal.html')
+    <main class="b-page b-page_sing-up-bgc">
+        <div class="b-page__header b-page__header_static">
+            <div class="b-page__header-container">
+                @@include('html/_header.html')
+            </div>
+        </div>
+        <div class="b-main b-page__content b-page__content_sing-up-bgc"
+            style="background-image: url('./img/verif-bcg.svg');">
+            <section class="b-main__section">
+                <div class="b-main__container">
+                    <div class="b-sing-up b-sing-up_page_header">
+                        <h1 class="b-sing-up__nav-title b-main-title b-main-title_line-center">Sing up form</h1>
+                    </div>
+                    <ol class="b-form-breadcrumbs b-sing-up__navigate">
+                        <li class="b-form-breadcrumbs__item b-form-breadcrumbs__item_next">
+                            <div class="b-form-breadcrumbs__inner">
+                                <div class="b-form-breadcrumbs__step-count">Step one</div>
+                                <div class="b-form-breadcrumbs__page-description">Fill the Form</div>
+                            </div>
+                        </li>
+                        <li class="b-form-breadcrumbs__item b-form-breadcrumbs__item_next">
+                            <div class="b-form-breadcrumbs__inner">
+                                <div class="b-form-breadcrumbs__step-count">Step two</div>
+                                <div class="b-form-breadcrumbs__page-description">Payment Order</div>
+                            </div>
+                        </li>
+                        <li class="b-form-breadcrumbs__item b-form-breadcrumbs__item_current">
+                            <div class="b-form-breadcrumbs__inner">
+                                <div class="b-form-breadcrumbs__step-count">Step three</div>
+                                <div class="b-form-breadcrumbs__page-description">Come on Course</div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="b-main__section mb">
+                <div class="b-main__container">
+                    <div class="b-last-step">
+                        <div class="b-last-step__title b-title b-title_low">You have successfully registered for the
+                            course!
+                        </div>
+                        <a href="#" class="b-last-step__btn b-btn">View other courses</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="b-page__footer">
+            <div class="b-page__container">
+                @@include('html/_footer.html')
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

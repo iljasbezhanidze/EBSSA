@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <title>EBSSA</title>
+</head>
+
+<body>
+    @@include('html/side-frame.html')
+    @@include('html/modal.html')
+    <main class="b-page">
+        <div class="b-page__header b-page__header_static">
+            <div class="b-page__header-container">
+                @@include('html/_header.html')
+            </div>
+        </div>
+        <section class="b-main__section  b-main__section-blur_center mb" data-tab>
+            <div class="b-main__container">
+                <div class="b-prices">
+                    <h1 class="b-prices__nav-title b-main-title b-main-title_line">Course schedule</h1>
+                    <div class="b-prices__table-nav">
+                        <div class="b-fillter-nav ">
+                            <button class="b-fillter-nav__btn active" data-tab-button="table-1"
+                                type="button">All</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="table-2" type="button">Close
+                                Protection</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="table-1" type="button">High Risk
+                                Protection</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="table-2" type="button">Individual
+                                Course</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="table-1" type="button">Military
+                                Training</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="table-2" type="button">Paramediacal
+                                Response</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="table-1" type="button">Tactical
+                                Shooting</button>
+                        </div>
+                    </div>
+                    <!-- desc -->
+                    <!-- course 1 -->
+                    <div class="b-prices__table-wrapper active" data-tab-content="table-1">
+                        <table class="b-table b-table_pc b-prices__table active">
+                            <thead class=" b-table__head">
+                                <tr class="b-table__row b-table__row_head">
+                                    <td class="b-table__cell b-table__cell_title">Course Name</td>
+                                    <td class="b-table__cell b-table__cell_title">Country</td>
+                                    <td class="b-table__cell b-table__cell_title">Duration</td>
+                                    <td class="b-table__cell b-table__cell_title">Price</td>
+                                    <td class="b-table__cell b-table__cell_title">Availability</td>
+                                </tr>
+                            </thead>
+                            <tbody class="b-table__body">
+                                <tr class="b-table__row">
+                                    <td class="b-table__cell">Close Protection Operative</td>
+                                    <td class="b-table__cell">Jordan</td>
+                                    <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                    <td class="b-table__cell">2 450 €</td>
+                                    <td class="b-table__cell">5 spots left</td>
+                                    <td class="b-table__cell b-table__cell_btn">
+                                        <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                    </td>
+                                </tr>
+                                <tr class="b-table__row">
+                                    <td class="b-table__cell">Close Protection Operative</td>
+                                    <td class="b-table__cell">Jordan</td>
+                                    <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                    <td class="b-table__cell">1 650 € </td>
+                                    <td class="b-table__cell">5 spots left</td>
+                                    <td class="b-table__cell b-table__cell_btn">
+                                        <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- table mob -->
+                        <!-- once corse -->
+                        <div class=" b-table b-table_mob b-prices__table">
+                            <table class="b-table__corse">
+                                <thead class="b-table__head">
+                                    <tr class="b-table__row b-table__row_head">
+                                        <td class="b-table__cell b-table__cell_title">Course Name</td>
+                                        <td class="b-table__cell b-table__cell_title">Country</td>
+                                        <td class="b-table__cell b-table__cell_title">Duration</td>
+                                        <td class="b-table__cell b-table__cell_title">Price</td>
+                                        <td class="b-table__cell b-table__cell_title">Availability</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="b-table__body">
+                                    <tr class="b-table__row">
+                                        <td class="b-table__cell">Close Protection Operative</td>
+                                        <td class="b-table__cell">Jordan</td>
+                                        <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                        <td class="b-table__cell">2 450 €</td>
+                                        <td class="b-table__cell">5 spots left</td>
+                                        <td class="b-table__cell b-table__cell_btn">
+                                            <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- twice course -->
+                            <table class="b-table__corse">
+                                <thead class="b-table__head">
+                                    <tr class="b-table__row b-table__row_head">
+                                        <td class="b-table__cell b-table__cell_title">Course Name</td>
+                                        <td class="b-table__cell b-table__cell_title">Country</td>
+                                        <td class="b-table__cell b-table__cell_title">Duration</td>
+                                        <td class="b-table__cell b-table__cell_title">Price</td>
+                                        <td class="b-table__cell b-table__cell_title">Availability</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="b-table__row">
+                                    <tr class="b-table__row">
+                                        <td class="b-table__cell">Close Protection Operative</td>
+                                        <td class="b-table__cell">Jordan</td>
+                                        <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                        <td class="b-table__cell">1 650 € </td>
+                                        <td class="b-table__cell">5 spots left</td>
+                                        <td class="b-table__cell b-table__cell_btn">
+                                            <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- course 2 -->
+                    <div class="b-prices__table-wrapper" data-tab-content="table-2">
+                        <table class="b-table b-table_pc b-prices__table active">
+                            <thead class=" b-table__head">
+                                <tr class="b-table__row b-table__row_head">
+                                    <td class="b-table__cell b-table__cell_title">Course Name</td>
+                                    <td class="b-table__cell b-table__cell_title">Country</td>
+                                    <td class="b-table__cell b-table__cell_title">Duration</td>
+                                    <td class="b-table__cell b-table__cell_title">Price</td>
+                                    <td class="b-table__cell b-table__cell_title">Availability</td>
+                                </tr>
+                            </thead>
+                            <tbody class="b-table__body">
+                                <tr class="b-table__row">
+                                    <td class="b-table__cell">Close Protection Operative</td>
+                                    <td class="b-table__cell">Jordan</td>
+                                    <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                    <td class="b-table__cell">2 450 €</td>
+                                    <td class="b-table__cell">5 spots left</td>
+                                    <td class="b-table__cell b-table__cell_btn">
+                                        <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                    </td>
+                                </tr>
+                                <tr class="b-table__row">
+                                    <td class="b-table__cell">Close Protection Operative</td>
+                                    <td class="b-table__cell">Jordan</td>
+                                    <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                    <td class="b-table__cell">2 450 €</td>
+                                    <td class="b-table__cell">5 spots left</td>
+                                    <td class="b-table__cell b-table__cell_btn">
+                                        <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                    </td>
+                                </tr>
+                                <tr class="b-table__row">
+                                    <td class="b-table__cell">Close Protection Operative</td>
+                                    <td class="b-table__cell">Jordan</td>
+                                    <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                    <td class="b-table__cell">1 650 € </td>
+                                    <td class="b-table__cell">5 spots left</td>
+                                    <td class="b-table__cell b-table__cell_btn">
+                                        <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- table mob -->
+                        <!-- once corse -->
+                        <div class=" b-table b-table_mob b-prices__table">
+                            <table class="b-table__corse">
+                                <thead class="b-table__head">
+                                    <tr class="b-table__row b-table__row_head">
+                                        <td class="b-table__cell b-table__cell_title">Course Name</td>
+                                        <td class="b-table__cell b-table__cell_title">Country</td>
+                                        <td class="b-table__cell b-table__cell_title">Duration</td>
+                                        <td class="b-table__cell b-table__cell_title">Price</td>
+                                        <td class="b-table__cell b-table__cell_title">Availability</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="b-table__body">
+                                    <tr class="b-table__row">
+                                        <td class="b-table__cell">Close Protection Operative</td>
+                                        <td class="b-table__cell">Jordan</td>
+                                        <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                        <td class="b-table__cell">2 450 €</td>
+                                        <td class="b-table__cell">5 spots left</td>
+                                        <td class="b-table__cell b-table__cell_btn">
+                                            <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="b-table__corse">
+                                <thead class="b-table__head">
+                                    <tr class="b-table__row b-table__row_head">
+                                        <td class="b-table__cell b-table__cell_title">Course Name</td>
+                                        <td class="b-table__cell b-table__cell_title">Country</td>
+                                        <td class="b-table__cell b-table__cell_title">Duration</td>
+                                        <td class="b-table__cell b-table__cell_title">Price</td>
+                                        <td class="b-table__cell b-table__cell_title">Availability</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="b-table__body">
+                                    <tr class="b-table__row">
+                                        <td class="b-table__cell">Close Protection Operative</td>
+                                        <td class="b-table__cell">Jordan</td>
+                                        <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                        <td class="b-table__cell">2 450 €</td>
+                                        <td class="b-table__cell">5 spots left</td>
+                                        <td class="b-table__cell b-table__cell_btn">
+                                            <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- twice course -->
+                            <table class="b-table__corse">
+                                <thead class="b-table__head">
+                                    <tr class="b-table__row b-table__row_head">
+                                        <td class="b-table__cell b-table__cell_title">Course Name</td>
+                                        <td class="b-table__cell b-table__cell_title">Country</td>
+                                        <td class="b-table__cell b-table__cell_title">Duration</td>
+                                        <td class="b-table__cell b-table__cell_title">Price</td>
+                                        <td class="b-table__cell b-table__cell_title">Availability</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="b-table__row">
+                                    <tr class="b-table__row">
+                                        <td class="b-table__cell">Close Protection Operative</td>
+                                        <td class="b-table__cell">Jordan</td>
+                                        <td class="b-table__cell">11 April 2022 - 17 April 2022</td>
+                                        <td class="b-table__cell">1 650 € </td>
+                                        <td class="b-table__cell">5 spots left</td>
+                                        <td class="b-table__cell b-table__cell_btn">
+                                            <a class="b-table__link b-btn b-btn_sm" href="#">Enroll</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </div>
+        <div class="b-page__footer">
+            <div class="b-page__container">
+                @@include('html/_footer.html')
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

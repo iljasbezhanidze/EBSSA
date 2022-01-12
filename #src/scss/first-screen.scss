@@ -1,0 +1,153 @@
+.b-first-screen {
+    height: 100vh;
+    position: relative;
+    @extend .e-flex-align-center;
+    width: 100%;
+    justify-content: flex-start !important;
+
+    @include md() {
+        height: 90vh;
+    }
+
+    @include sm() {
+        height: 92vh;
+    }
+
+    @include xs() {
+        align-items: flex-start;
+    }
+
+    @media(max-width: 700px) and (orientation: landscape) {
+        height: 100vw;
+    }
+}
+
+.b-title-box {}
+
+.b-first-screen__content {
+    max-width: 49%;
+    z-index: 3;
+
+    @include xl() {
+        max-width: 60%;
+    }
+
+    @include lg() {
+        max-width: 75%;
+    }
+
+    @include xs() {
+        max-width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.b-title-box__title {
+    margin-bottom: 40px;
+
+    @include xs() {
+        margin-top: auto;
+    }
+}
+
+.b-main-title {}
+
+.b-title-box__description {
+    font-size: 20px;
+    opacity: .6;
+    padding-bottom: 6.25vw;
+
+    @include md() {
+        font-size: 18px;
+    }
+
+    @include xs() {
+        margin-bottom: auto;
+    }
+}
+
+.b-title-box__btn {
+    max-width: 334px;
+    margin-bottom: 120px;
+
+    @include lg() {
+        margin-bottom: 90px;
+    }
+
+    @include md() {
+        margin-bottom: 60px;
+    }
+
+    @media(max-width: 420px) {
+        margin-bottom: 40px;
+    }
+}
+
+.b-btn {}
+
+.b-btn_arrow {}
+
+.b-first-screen__avatar {
+    position: absolute;
+    width: 47.25vw;
+    height: 54.5vw;
+    right: -1.33vw;
+    bottom: -1vw;
+    object-fit: cover;
+    z-index: 2;
+
+    @include xl() {
+        width: 53.25vw;
+        height: 61.5vw;
+        right: -2.33vw;
+    }
+
+    @include lg() {
+        width: 62.25vw;
+        height: 73.5vw;
+        right: -5.33vw;
+    }
+
+    @include md() {
+        right: -29.33vw;
+        width: 76.25vw;
+        height: 87.5vw;
+    }
+
+    @include sm() {
+        right: -29.33vw;
+        width: 91.25vw;
+        height: 104.5vw;
+    }
+}
+
+.b-first-screen__maze {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 35.95vw;
+    height: 48.47vw;
+    right: -7vw;
+    bottom: 5.3vw;
+    background-size: contain;
+    z-index: 1;
+    opacity: .2;
+
+    @include xl() {
+        height: 55.47vw;
+    }
+
+    @include lg() {
+        width: 42.95vw;
+        bottom: 16.3vw;
+        right: -7vw;
+    }
+
+    @include md() {
+        width: 42.95vw;
+        bottom: 16.3vw;
+        right: -7vw;
+    }
+}

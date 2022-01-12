@@ -1,0 +1,127 @@
+.b-article-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+        max-width: 680px;
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: get-vw(80px);
+        }
+
+        & p,
+        & ul,
+        & ol {
+            @include adaptive-font(24, 16);
+            line-height: 1.6;
+            opacity: .8;
+            font-weight: 400;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        & li {
+            margin-bottom: 5px;
+        }
+
+        & h1 {
+            @include adaptive-font(64, 32);
+            margin-bottom: 20px;
+        }
+
+        & h2 {
+            @include adaptive-font(48, 26);
+            margin-bottom: 20px;
+        }
+
+        & h3 {
+            @include adaptive-font(36, 24);
+            margin-bottom: 20px;
+        }
+
+        & h4 {
+            @include adaptive-font(24, 18);
+            margin-bottom: 20px;
+        }
+
+        & h5 {
+            @include adaptive-font(18, 14);
+            margin-bottom: 20px;
+        }
+
+        & h6 {
+            @include adaptive-font(14, 10);
+            margin-bottom: 20px;
+        }
+
+        & ul,
+        & ol {
+            list-style: initial;
+            list-style-position: inside;
+        }
+    }
+
+    &__table {
+        margin-bottom: get-vw(80px);
+        width: 100%;
+
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+        }
+
+        & thead {
+            border-bottom: 2px solid #EB5757 !important;
+
+
+            & tr {}
+
+            & td {
+                padding-bottom: 20px;
+                font-size: 14px;
+                line-height: 1.6;
+                opacity: .6;
+            }
+
+        }
+
+        & tbody {
+            & tr {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+            }
+
+            & td {
+                font-size: 18px;
+                line-height: 1.8;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                opacity: .8;
+            }
+        }
+    }
+
+    &__img {
+        margin-bottom: get-vw(120px);
+        margin-top: get-vw(120px);
+    }
+
+    &__media {
+        margin-bottom: get-vw(120px);
+        margin-top: get-vw(120px);
+
+        & video,
+        & img,
+        & iframe {
+            border: none;
+            // min-width: 100vw;
+            min-height: 60vw;
+        }
+    }
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <title>EBSSA</title>
+</head>
+
+<body>
+    @@include('html/side-frame.html')
+    @@include('html/modal.html')
+    <main class="b-page b-page_sing-up-bgc">
+        <div class="b-page__header b-page__header_static">
+            <div class="b-page__header-container">
+                @@include('html/_header.html')
+            </div>
+        </div>
+        <div class="b-main b-page__content b-page-content_sing-up-bgc"
+            style="background-image: url('./img/verif-bcg.svg');">
+            <section class="b-main__section">
+                <div class="b-main__container">
+                    <div class="b-sing-up b-sing-up_page_header">
+                        <h1 class="b-sing-up__nav-title b-main-title b-main-title_line-center">Sing up form</h1>
+                    </div>
+                    <ol class="b-form-breadcrumbs b-sing-up__navigate">
+                        <li class="b-form-breadcrumbs__item b-form-breadcrumbs__item_current">
+                            <div class="b-form-breadcrumbs__inner">
+                                <div class="b-form-breadcrumbs__step-count">Step one</div>
+                                <div class="b-form-breadcrumbs__page-description">Fill the Form</div>
+                            </div>
+                        </li>
+                        <li class="b-form-breadcrumbs__item b-form-breadcrumbs__item_next">
+                            <div class="b-form-breadcrumbs__inner">
+                                <div class="b-form-breadcrumbs__step-count">Step two</div>
+                                <div class="b-form-breadcrumbs__page-description">Payment Order</div>
+                            </div>
+                        </li>
+                        <li class="b-form-breadcrumbs__item b-form-breadcrumbs__item_last">
+                            <div class="b-form-breadcrumbs__inner">
+                                <div class="b-form-breadcrumbs__step-count">Step three</div>
+                                <div class="b-form-breadcrumbs__page-description">Come on Course</div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="b-main__section mb">
+                <div class="b-form-container">
+                    <div class="b-sing-up b-sing-up_page_body b-form-container">
+                        <div class="b-sing-up__form-title">
+                            <h2 class="b-sing-up__title b-title b-title_low">
+                                Personal details
+                            </h2>
+                            <span class="b-sing-up__note">* — Fields Are Required!</span>
+                        </div>
+                        <form class="b-form .b-form-section__wrapper">
+                            <div class="b-form__parth b-form__parth_pad-none">
+                                <!-- row 1 -->
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="name">First Name *</label>
+                                        <input class="b-form__input b-form__input_first-name" type="text" id="name"
+                                            placeholder="Peter" required autocomplete="off">
+                                    </div>
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="name">Surame *</label>
+                                        <input class="b-form__input b-form__input_last-name" type="text" id="name"
+                                            placeholder="Griffin" required autocomplete="off">
+                                    </div>
+                                </div>
+
+                                <!-- row 2 -->
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="name">Middle Name *</label>
+                                        <input class="b-form__input b-form__input_first-name" type="text" id="name"
+                                            placeholder="Peter" required autocomplete="off">
+                                    </div>
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="name">Full Name for Certificate *</label>
+                                        <input class="b-form__input b-form__input_last-name" type="text" id="name"
+                                            placeholder="Peter Adelaide Griffin" required autocomplete="off">
+                                    </div>
+                                </div>
+
+                                <!-- radio 1 -->
+                                <div class="b-radios">
+                                    <div class="b-radios__row">
+                                        <h3 class="b-radios__title">Sex *</h3>
+                                        <div class="b-radios__body">
+                                            <div class="b-radios__wrapper">
+                                                <input type="radio" class="b-radios__item" id="sex" name="sex" required
+                                                    checked>
+                                                <label for="sex" class="b-radios__label">
+                                                </label>
+                                                <span class="b-radios__label-title">
+                                                    Male
+                                                </span>
+                                            </div>
+
+                                            <div class="b-radios__wrapper">
+                                                <input type="radio" class="b-radios__item" id="Female" name="sex"
+                                                    required>
+                                                <label for="Female" class="b-radios__label">
+                                                </label>
+                                                <span class="b-radios__label-title">
+                                                    Female
+                                                </span>
+                                            </div>
+
+                                            <div class="b-radios__wrapper">
+                                                <input type="radio" class="b-radios__item" id="Non-binary" name="sex"
+                                                    required>
+                                                <label for="Non-binary" class="b-radios__label">
+                                                </label>
+                                                <span class="b-radios__label-title">
+                                                    Non-binary
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-- radio 2 -->
+                                        <div class="b-radios__row">
+                                            <h3 class="b-radios__title">Right/Left Handed *</h3>
+                                            <div class="b-radios__body">
+                                                <div class="b-radios__wrapper">
+                                                    <input type="radio" class="b-radios__item" id="right-hand"
+                                                        name="handed" required checked>
+                                                    <label for="right-hand" class="b-radios__label">
+                                                    </label>
+                                                    <span class="b-radios__label-title">
+                                                        Right Handed
+                                                    </span>
+                                                </div>
+
+                                                <div class="b-radios__wrapper">
+                                                    <input type="radio" class="b-radios__item" id="left-hand"
+                                                        name="handed" required>
+                                                    <label for="left-hand" class="b-radios__label">
+                                                    </label>
+                                                    <span class="b-radios__label-title">
+                                                        Left Handed
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- row 3 -->
+                                <div class="b-form__row">
+                                    <!-- date -->
+                                    <div class="b-form__item">
+                                        <label class="b-form__label b-form__label_date" for="Birthday">Birthday
+                                            *</label>
+                                        <input class="b-form__input b-form__input_date" type="date" id="Birthday"
+                                            required name="date">
+                                    </div>
+
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="Place of Birth">Place of Birth *</label>
+                                        <input class="b-form__input b-form__input_place" type="text" id="Place of Birth"
+                                            placeholder="Paris, France" required autocomplete="off"
+                                            name="Place of Birth">
+                                    </div>
+                                </div>
+
+                                <!-- row 4 -->
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="Nationality">Nationality *</label>
+                                        <input class="b-form__input b-form__input_first-name" type="text"
+                                            id="Nationality" placeholder="French" required autocomplete="off"
+                                            name="Nationality">
+                                    </div>
+                                    <!-- radios -->
+                                    <div class="b-form__item">
+                                        <div class="b-radios">
+                                            <h3 class="b-radios__title">Do you require Visa? *</h3>
+                                            <div class="b-radios__body">
+                                                <div class="b-radios__wrapper">
+                                                    <input type="radio" class="b-radios__item" id="visa yes" name="visa"
+                                                        required checked>
+                                                    <label for="visa yes" class="b-radios__label">
+                                                    </label>
+                                                    <span class="b-radios__label-title">
+                                                        Yes
+                                                    </span>
+                                                </div>
+
+                                                <div class="b-radios__wrapper">
+                                                    <input type="radio" class="b-radios__item" id="visa no" name="visa"
+                                                        required>
+                                                    <label for="visa no" class="b-radios__label">
+                                                    </label>
+                                                    <span class="b-radios__label-title">
+                                                        No
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- path 2 -->
+                            <div class="b-form__parth">
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="phone">Phone Number *</label>
+                                        <input class="b-form__input b-form__input_last-name" type="text" id="phone"
+                                            placeholder="+33 1 49 40 67 89" autocomplete="off" name="phone" required>
+                                    </div>
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="email">Email *</label>
+                                        <input class="b-form__input b-form__input_last-name" type="text" id="email"
+                                            placeholder="example@example.com" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="address">Postal Addresm including Postal Code
+                                            *</label>
+                                        <input class="b-form__input b-form__input_first-name" type="text" id="address"
+                                            placeholder="20 Pl. de la Liberté, 86000 Poitiers, France"
+                                            autocomplete="off" name="address">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- parth 3 -->
+                            <div class="b-form__parth">
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="profession">Profession</label>
+                                        <input class="b-form__input b-form__input_last-name" type="text" id="profession"
+                                            placeholder="Aperture Science" autocomplete="off">
+                                    </div>
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="profession">Profession</label>
+                                        <input class="b-form__input b-form__input_last-name" type="text" id="profession"
+                                            placeholder="Night Watch" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="allergies">Food Restrictions /
+                                            Allergies</label>
+                                        <input class="b-form__input b-form__input_last-name" type="text" id="allergies"
+                                            placeholder="Peanuts" autocomplete="off">
+                                    </div>
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="company">T-shirt Size</label>
+                                        <input class="b-form__input b-form__input_select b-form__input_company"
+                                            id="company" list="size-list" placeholder="Choose option" name="company">
+                                        <datalist class="b-form__input-secect-list" id="size-list">
+                                            <option class="b-form__select-turn" value="l">
+                                            <option class="b-form__select-turn" value="m">
+                                            <option class="b-form__select-turn" value="s">
+                                            <option class="b-form__select-turn" value="xl">
+                                            <option class="b-form__select-turn" value="xxl">
+                                        </datalist>
+                                    </div>
+                                </div>
+
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="text">How did you know about us?</label>
+                                        <textarea class="b-form__textarea" name="" id="" cols="30" rows="10" id="text"
+                                            placeholder="From friends"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- parth 4 -->
+                            <div class="b-form__parth">
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="company">Company Name</label>
+                                        <input class="b-form__input b-form__input_select b-form__input_company"
+                                            id="company" list="company-list" placeholder="Choose level" name="company">
+                                        <datalist class="b-form__input-secect-list" id="company-list">
+                                            <option class="b-form__select-turn" value="SpaceX">
+                                            <option class="b-form__select-turn" value="Apple">
+                                            <option class="b-form__select-turn" value="Meta">
+                                            <option class="b-form__select-turn" value="Totonis">
+                                            <option class="b-form__select-turn" value="Tesla">
+                                        </datalist>
+                                    </div>
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="profession">Profession</label>
+                                        <input class="b-form__input b-form__input_last-name" type="text" id="profession"
+                                            placeholder="Francais" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="b-form__row">
+                                    <div class="b-form__item">
+                                        <label class="b-form__label" for="language">Other Language Knowledge</label>
+                                        <input class="b-form__input b-form__input_select b-form__input_company"
+                                            id="language" list="language-list" placeholder="Choose level"
+                                            name="language">
+                                        <datalist class="b-form__input-secect-list" id="language-list">
+                                            <option class="b-form__select-turn" value="Ukrainian">
+                                            <option class="b-form__select-turn" value="English">
+                                            <option class="b-form__select-turn" value="Spanish">
+                                            <option class="b-form__select-turn" value="Italy">
+                                            <option class="b-form__select-turn" value="France">
+                                        </datalist>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-form__parth">
+                                <h2 class="b-form__parth-title b-title b-title_low">
+                                    Your order
+                                </h2>
+                                <div class="b-order">
+                                    <div class="b-order__row b-order__row_title">
+                                        <h3 class="b-order__item b-order__item_title">Product</h3>
+                                        <h3 class="b-order__item b-order__item_title">Product</h3>
+                                    </div>
+                                    <div class="b-order__row current-order">
+                                        <h4 class="b-order__item b-order__item_position">Close Protection Operative
+                                        </h4>
+                                        <div class="b-order__item b-order__item_price">€ 2 145.00</div>
+                                    </div>
+                                    <div class="b-order__row">
+                                        <h4 class="b-order__item b-order__item_position">Subtotal</h4>
+                                        <div class="b-order__item b-order__item_price">€ 2 145.00</div>
+                                    </div>
+                                    <div class="b-order__row">
+                                        <h4 class="b-order__item b-order__item_position">Total</h4>
+                                        <div class="b-order__item b-order__item_price">€ 2 145.00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="b-form__parth">
+                                <div class="b-form__checkbox b-check">
+                                    <input class="b-check__checkbox" type="checkbox" id="checkAplications" required>
+                                    <label class="b-check__label" for="checkAplications"></label>
+                                    <div class="b-check__agr">
+                                        <div class="b-check__text">
+                                            <p>
+                                                Applicants for any European Bodyguard and Security
+                                                Service Association must fulfill all necessary requirements and
+                                                prerequisites, in addition to completing and signing this form and
+                                                providing
+                                                required supporting documentation where applicable (see administrative
+                                                details).
+                                            </p>
+                                            <p>
+                                                To confirm enrollment please make sure your completed application forms
+                                                and
+                                                required documentation are received together by the Academy with your
+                                                registration form.
+                                            </p>
+                                            <p>
+                                                Please print or type all information, as it would appear on official
+                                                documents. Due to the content and information presented in the Courses,
+                                                European Bodyguard and Security
+                                            </p>
+                                            <p>
+                                                Service Association reserves the right to refuse/cancel a course
+                                                participation of individuals who do not have the necessary security
+                                                clearance, and/or Suitability.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-form__checkbox b-check">
+                                    <input class="b-check__checkbox" type="checkbox" id="checkOPersonal" required>
+                                    <label class="b-check__label" for="checkOPersonal"></label>
+                                    <div class="b-check__agr">
+                                        <div class="b-check__text">
+                                            <p>
+                                                I agree to process my personal data included in the notification form
+                                                for the needs in the process of registering for a course of EBSSA, in
+                                                accordance with the Law of 29.08.1997 on the Protection of Personal Data
+                                                (PL Journal of Laws no. 133 883)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="b-form__capcha">
+                                    Capcha
+                                </div>
+                            </div>
+
+                            <button class="b-form__btn b-form__btn_sing-up b-btn b-btn_arrow" type="submit">Next
+                                Step</button>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="b-page__footer">
+            <div class="b-page__container">
+                @@include('html/_footer.html')
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

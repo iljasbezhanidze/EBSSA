@@ -1,0 +1,24 @@
+.b-training {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: get-vw(80px);
+
+    @include md() {
+        flex-direction: column;
+    }
+}
+
+.b-training__col {
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+
+    @include md() {
+        max-width: 100%;
+    }
+}
+
+.b-tarining__bcg {
+    @extend .b-faq__background;
+}

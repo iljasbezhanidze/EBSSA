@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    font-style: normal, 'sans-serif';
+}
+
+body {
+    overflow-x: hidden;
+    transition: none !important;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: transparent;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+address {
+    font-style: normal;
+}

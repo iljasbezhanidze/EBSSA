@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <title>EBSSA</title>
+</head>
+
+<body>
+    @@include('html/side-frame.html')
+    @@include('html/modal.html')
+    <main class="b-page">
+        <div class="b-page__header">
+            <div class="b-page__header-container">
+                @@include('html/_header.html')
+            </div>
+        </div>
+        <div class="b-main b-page__content">
+            <section class="b-main__section b-main__section_pad-none b-main__section_bcg-cover"
+                style="background-image: url('img/article-first-screen.jpg');">
+                <div class="b-main__container">
+                    <div class="b-article-page">
+                        <div class="b-first-screen">
+                            <div class="b-title-box b-first-screen__content">
+                                <div class="b-title-box__text">
+                                    <h1 class="b-title-box__title b-main-title b-main-title_line">What is a Static
+                                        security
+                                        guard and what do they do in Hostile areas.</h1>
+                                    <div class="b-title-box__footer">
+                                        <div class="b-title-box__date-wrapper">
+                                            <div class="b-title-box__date-title">Date</div>
+                                            <time class="b-title-box__date" datetime="08-01-2021">September 01,
+                                                2021</time>
+                                        </div>
+                                        <div class="b-title-box__tag-wrapper">
+                                            <div class="b-title-box__tag-title">Tag</div>
+                                            <a class="b-title-box__tag" href="#">News</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="b-title-box__img" src="img/article-cover.jpg" alt="soldier">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="b-main__section">
+                <div class="b-main__container">
+                    @@include('html/article-content.html')
+                </div>
+            </div>
+        </div>
+        <div class="b-page__footer">
+            <div class="b-page__container">
+                @@include('html/_footer.html')
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

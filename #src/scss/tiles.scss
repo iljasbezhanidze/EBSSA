@@ -1,0 +1,123 @@
+.b-tiles-section {}
+
+.b-tiles-section__title {
+    @extend [class*="__nav-title"];
+}
+
+.b-tiles-section__title_full-width {
+    max-width: 100% !important;
+}
+
+.b-tiles {
+    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+
+    @include child-counter('> li', '', '\a') {
+        @extend .e-pseudo;
+        color: #101314;
+        font-size: 18px;
+        font-weight: 700;
+        top: get-vw(60px);
+        left: get-vw(60px);
+    }
+
+
+
+    &_color-border .b-tiles__item {
+        border-color: var(--accent-color);
+
+        &::before {
+            color: #fff;
+        }
+    }
+
+    &_not-numbers .b-tiles__item {
+        pointer-events: none;
+        background-color: var(--bcg);
+
+        &::after {
+            @extend .e-pseudo;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 2L5.75 10L2 6.36364' stroke='%23EB5757' stroke-width='2' stroke-linecap='square'/%3E%3C/svg%3E");
+            width: 18px;
+            height: 12px;
+            top: get-vw(60px);
+            left: get-vw(60px);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &:before {
+            display: none;
+        }
+
+        & .b-tile__description {
+            opacity: 1;
+        }
+    }
+}
+
+.b-tiles__item:hover .b-tiles>li:before {
+    color: var(--accent-color);
+}
+
+.b-tiles__item {
+    --size-tile: calc(var(--container-width) / 3 - 8px);
+    padding: get-vw(120px) get-vw(60px) get-vw(60px);
+    flex-grow: 1;
+    position: relative;
+    max-width: var(--size-tile);
+    border: 4px solid #14181A;
+    margin-bottom: 10px;
+    display: flex;
+
+    &:hover {
+        border-color: var(--accent-color);
+    }
+
+    @include md() {
+        max-width: calc(calc(var(--container-width) / 2 - 10px));
+        padding: 60px 30px 30px;
+    }
+
+    @include xs() {
+        max-width: 100%;
+        min-height: calc((100vw - 50px) * 0.7);
+    }
+
+    @include mob() {
+        padding: 50px 20px 20px;
+    }
+
+    &_color-border {
+        border-color: var(--accent-color);
+    }
+}
+
+.b-tile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.b-tile__icon {}
+
+.b-tile__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 24px;
+
+    @include mob() {
+        font-size: 20px;
+    }
+}
+
+.b-tile__description {
+    opacity: .6;
+    line-height: 1.8;
+    font-size: 16px;
+}

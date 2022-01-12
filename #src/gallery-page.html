@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <title>EBSSA</title>
+</head>
+
+<body>
+    @@include('html/side-frame.html')
+    @@include('html/modal.html')
+    <main class="b-page">
+        <div class="b-page__header b-page__header_static">
+            <div class="b-page__header-container">
+                @@include('html/_header.html')
+            </div>
+        </div>
+        <div class="b-main b-page__content">
+            <section class="b-main__section">
+                <div class="b-main__container">
+                    <div class="b-gallery-preview">
+                        <h1 class="b-gallery-preview__nav-title b-main-title b-main-title_line">
+                            Gallery
+                        </h1>
+                        <ul class="b-gallery-preview__list">
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list1.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">Close
+                                    protection course</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">71</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list2.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">Privat
+                                    military contractors course</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">12</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list3.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">PSD in high
+                                    risk areas</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">32</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list4.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">Our
+                                    facilities</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">7</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                            <li class="b-gallery-link b-gallery-preview__item">
+                                <img class="b-gallery-link__img" src="img/gallery-list5.jpg" alt="gallery list link">
+                                <a class="b-gallery-link__button b-btn b-btn_arrow b-btn_squard" href="#">Instructir
+                                    course’s</a>
+                                <a class="b-gallery-counter b-gallery-link__counter" href="#">
+                                    <div class="b-gallery-counter__title">16</div>
+                                    <div class="b-gallery-counter__description">photo</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="b-page__footer">
+            <div class="b-page__container">
+                @@include('html/_footer.html')
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

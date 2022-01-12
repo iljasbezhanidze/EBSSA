@@ -1,0 +1,125 @@
+.b-experience-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: get-vw(80px);
+}
+
+.b-experience-card {
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.b-experience-cards__item {
+    flex: 1 1 47%;
+    margin-bottom: 40px;
+    max-width: 50%;
+}
+
+.b-experience-card__img {
+    object-fit: cover;
+    width: get-vw(320px);
+    height: 100%;
+    // height: get-vw(320px);
+}
+
+.b-experience-card__wrapper {}
+
+.b-enviroment {
+    text-transform: uppercase;
+    opacity: .8;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background: #202427;
+    border-radius: 40px;
+    white-space: nowrap;
+    font-size: 12px;
+
+    & svg {
+        margin-left: 10px;
+        transform: scale(1.5);
+    }
+}
+
+.b-experience-card__enviroment {
+    margin-bottom: 20px;
+    max-width: max-content;
+}
+
+.b-experience-card__title {
+    @include adaptive-font(36, 24);
+    margin-bottom: 10px;
+}
+
+.b-experience-card__subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.b-experience-card__description {
+    font-size: 14px;
+    line-height: 180%;
+    opacity: .6;
+}
+
+@media(max-width: 1300px) {
+    .b-experience-cards__item {
+        flex: 1 1 100%;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+
+    .b-experience-card__img {
+        width: auto;
+    }
+}
+
+@include sm() {
+    .b-experience-card__img {
+        max-width: 47%;
+    }
+}
+
+@include xs() {
+    .b-experience-card {
+        flex-direction: column;
+    }
+
+    .b-experience-card__img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .b-experience-cards__item {
+        margin-bottom: 60px;
+    }
+}
+
+@include mob() {
+    .b-experience-card {
+        flex-direction: column;
+    }
+
+    .b-experience-card__img {
+        margin-bottom: 20px;
+        min-width: 100vw;
+        margin-left: -15px;
+    }
+
+    .b-experience-cards__item {
+        margin-bottom: 40px;
+    }
+
+    .b-experience-card__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .b-experience-card__subtitle {
+        margin-bottom: 16px;
+    }
+}

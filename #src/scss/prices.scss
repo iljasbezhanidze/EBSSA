@@ -1,0 +1,17 @@
+.b-prices__table-wrapper {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.b-prices__table-nav {
+    @extend [class*="__nav-title"];
+}
+
+@include mob() {
+    .b-prices__table-nav {
+        margin-bottom: 20px;
+    }
+}

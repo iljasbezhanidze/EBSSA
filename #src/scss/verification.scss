@@ -1,0 +1,120 @@
+.b-verification-card {
+    border: 4px solid #1B1F21;
+    padding: get-vw(120px);
+    background-repeat: no-repeat;
+    background-size: 47.2%;
+    background-position: left bottom;
+
+    @include mob() {
+        border: none;
+        padding: 0;
+    }
+}
+
+.b-verification-card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: get-vw(80px);
+}
+
+.b-verification-card__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.b-main-title {}
+
+.b-main-title_line-white {}
+
+.b-verification-card__accent-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+
+    @include xl() {
+        padding: 25px;
+    }
+
+    @include mob() {
+        padding: 30px 15px;
+    }
+}
+
+.b-verification-card__accent-card_warning {
+    background-color: var(--accent-color);
+}
+
+.b-verification-card__accent-card_succes {
+    background: #24B3B3;
+}
+
+
+.b-verification-card__code {
+    font-weight: 600;
+    @include adaptive-font(24, 18);
+    line-height: 160%;
+    margin-bottom: 5px;
+}
+
+.b-verification-card__description {
+    font-size: 18px;
+    line-height: 160%;
+
+    @include sm() {
+        font-size: 16px;
+    }
+
+    @include mob() {
+        font-size: 14px;
+    }
+}
+
+.b-verification-card__nav-title_low {}
+
+.b-title {}
+
+.b-title_white-line-middle {}
+
+.b-verification-card__label {
+    @extend .b-form__label;
+}
+
+.b-verification-card__input {
+    @extend .b-form__input;
+    margin-bottom: get-vw(80px);
+
+    @include sm() {
+        margin-bottom: 60px;
+    }
+
+    @include mob() {
+        margin-bottom: 40px;
+    }
+}
+
+.b-verification-card__btn {
+    width: max-content;
+    margin-top: auto;
+
+    @include sm() {
+        margin-right: 0;
+    }
+}
+
+.b-verification-card__nav-title.b-title {}
+
+@include sm() {
+    .b-verification-card__wrapper {
+        flex-direction: column;
+    }
+
+    .b-verification-card__col:not(:last-child) {
+        margin-bottom: 8.25vw;
+    }
+}

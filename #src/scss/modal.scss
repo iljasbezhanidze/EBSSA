@@ -1,0 +1,213 @@
+.disable-scroll {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.modal {
+    --transition-time: 0.3s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-time), visibility var(--transition-time);
+}
+
+.modal::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.b-modal-content {
+    max-width: 680px;
+    margin: auto;
+}
+
+.b-modal-content__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 56px;
+}
+
+.modal__container {
+    position: relative;
+    width: 840px;
+    margin: 50px auto;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #1B1F21;
+    padding: 80px;
+    cursor: default;
+    text-align: left;
+    display: none;
+
+    @include sm() {
+        padding: 50px;
+    }
+
+    @include xs() {
+        padding: 30px;
+        padding-top: 80px;
+    }
+
+    @include mob() {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        right: 0;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .modal__container {
+        width: 90%;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 8M15 15L8 8M8 8L15 1M8 8L1 15' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+    border-radius: 50%;
+    border: 2px solid #1f2a2e;
+    transform: translateY(-25%);
+
+    @include sm() {
+        right: 50px;
+        top: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    @include xs() {
+        right: 30px;
+        top: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover {
+        opacity: .85;
+    }
+}
+
+.modal.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity var(--transition-time), visibility var(--transition-time);
+}
+
+.modal__container.modal-open {
+    display: inline-block;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity var(--transition-time);
+}
+
+.fade.animate-open {
+    opacity: 1;
+    transition: opacity var(--transition-time);
+}
+
+.fadeInUp {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: transform var(--transition-time), opacity var(--transition-time);
+}
+
+.fadeInUp.animate-open {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform var(--transition-time), opacity var(--transition-time);
+}
+
+.b-form_modal {
+
+    & .b-check__checkbox-inner {
+        display: flex;
+        align-items: center;
+    }
+
+    & .b-form__label {
+        font-size: 14px;
+    }
+
+    .b-form__footer {
+        display: flex;
+        column-gap: 35px;
+    }
+
+    & .b-check__agr {
+        flex-wrap: wrap;
+        max-width: max-content;
+    }
+
+    & .b-form__btn {
+        max-width: 225px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    & .b-form__checkbox {
+        margin-bottom: 0;
+    }
+
+    @media(max-width: 620px) {
+        & .b-form__item {
+            width: 100%;
+        }
+
+        & .b-form__row {
+            flex-direction: column;
+        }
+
+        & .b-form__item:first-child {
+            margin-bottom: 25px;
+        }
+
+        & .b-form__btn {
+            flex: 1 0 100%;
+        }
+
+        & .b-check {
+            flex-wrap: wrap;
+        }
+
+        & .b-check__checkbox-inner {
+            margin-bottom: 40px;
+        }
+    }
+}

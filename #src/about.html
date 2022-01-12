@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>EBSSA</title>
+</head>
+
+<body>
+    @@include('html/side-frame.html')
+    @@include('html/modal.html')
+    <main class="b-page">
+        <div class="b-page__header b-page__header_static">
+            <div class="b-page__header-container">
+                @@include('html/_header.html')
+            </div>
+        </div>
+        <div class="b-main b-page__content">
+            <section class="b-main__section b-main__section_pad-none b-main__section-blur_center">
+                <div class="b-main__container">
+                    <!-- about start -->
+                    <div class="b-about-first-screen">
+                        <div class="b-about-first-screen__row">
+                            <div class="b-about-first-screen__col">
+                                <h1 class="b-about-first-screen__nav-title b-main-title b-main-title_line">About ebssa
+                                </h1>
+                                <p class="b-about-first-screen__text b-about-first-screen__text_accent">
+                                    EBSSA was founded in 2014, as a provider of High level Tactical and Firearms
+                                    training Courses. All EBSSA instructors are highly motivated and professional, drawn
+                                    from various international military, special operations, law enforcement and
+                                    commercial agencies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="b-about-first-screen__row">
+                            <div class="b-video b-about-first-screen__video" data-video="https://youtu.be/8tX8ff5_KO0">
+                                <img class="b-video__preview" src="" alt="video">
+                                <button class="b-video__play">
+                                    <svg class="b-video-play-btn" width="120" height="120" viewBox="0 0 120 120"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M118 60C118 92.0325 92.0325 118 60 118C27.9675 118 2 92.0325 2 60C2 27.9675 27.9675 2 60 2C92.0325 2 118 27.9675 118 60Z"
+                                            stroke="#EB5757" stroke-width="4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M50 44L74 60L50 76V44Z" fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="b-about-first-screen__row">
+                            <p class="b-about-first-screen__col">
+                                These personnel have a wealth of exceptional worldwide experience and are renowned for
+                                dealing with high-risk situations and complex operations. Since the moment of
+                                foundation, we are offering both civilian and tactical tactical courses, providing
+                                special training for law enforcement and military units from different countries.
+                            </p>
+                            <p class="b-about-first-screen__col">
+                                EBSSA provides the facilities and organize tactical courses in Serbia, Mexico, Jordan,
+                                Italy. We have a mobile training team and we are able to organize courses all over the
+                                World
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- about end -->
+            </section>
+            <section class="b-main__section b-main__section-blur_center">
+                <div class="b-main__container">
+                    @@include('html/stats.html')
+                </div>
+            </section>
+            <section class="b-main__section b-main__section-blur_center b-separator">
+                <div class="b-main__container">
+                    @@include('html/row-articles_persons.html')
+                </div>
+            </section>
+            <section class="b-main__section b-main__section-blur_center mb">
+                <div class="b-main__container">
+                    <div class="b-about-preview__container">
+                        <div class="b-about-preview__content">
+                            <img class="b-about-preview__img" src="img/online.jpg" alt="">
+                        </div>
+
+                        <div class="b-short-descr b-about-preview__text b-about-preview__text_pad-none">
+                            <h2 class="b-short-descr__titile b-title">
+                                Can't come to us?
+                                Join us online!
+                            </h2>
+                            <p class="b-short-descr__text">
+                                The Close Protection Operative course will teach you how to manage security of a VIP,
+                                organize a security
+                                team and all the logistics of prevention.
+                            </p>
+
+                            <a class="b-short-descr__btn b-btn b-btn_arrow" href="#">Visit EBSSA Online</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="b-main__section">
+                <div class="b-main__container_background b-main__container_xl">
+                    @@include('html/tabs.html')
+                </div>
+            </section>
+
+            <section class="b-main__section b-main__section-blur_left mb">
+                <div class="b-main__container">
+                    @@include('html/reviews-list.html')
+                </div>
+            </section>
+        </div>
+        <div class="b-page__footer">
+            <div class="b-page__container">
+                @@include('html/_footer.html')
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <title>EBSSA</title>
+</head>
+
+<body>
+    @@include('html/side-frame.html')
+    @@include('html/modal.html')
+    <main class="b-page">
+        <div class="b-page__header b-page__header_static">
+            <div class="b-page__header-container">
+                @@include('html/_header.html')
+            </div>
+        </div>
+        <div class="b-main b-page__content">
+            <section class="b-main__section b-main__section_bcg-top-right mb"
+                style="background-image: url('img/bcg-acc.svg');">
+                <div class="b-main__container">
+                    <div class="b-news" data-tab>
+                        <h1 class="b-news__nav-title b-main-title b-main-title_line">News</h1>
+                        <div class="b-fillter-nav b-news__nav-btns">
+                            <button class="b-fillter-nav__btn active" data-tab-button="news-1"
+                                type="button">All</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="news-2" type="button">Jobs</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="news-3" type="button">News</button>
+                            <button class="b-fillter-nav__btn" data-tab-button="news-4" type="button">Articles</button>
+                        </div>
+                        <div class="b-articles b-news__content active" data-tab-content="news-1">
+                            <ul class="b-articles__list">
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article1.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article2.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article3.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article4.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article5.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article6.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                            <ul class="b-pagination b-articles__pagination">
+                                <li class="b-pagination__item b-pagination__item_active">
+                                    <a class="b-pagination__link" href="#">1</a>
+                                </li>
+                                <li class="b-pagination__item">
+                                    <a class="b-pagination__link" href="#">2</a>
+                                </li>
+                                <li class="b-pagination__item">
+                                    <a class="b-pagination__link" href="#">3</a>
+                                </li>
+                                <li class="b-pagination__item">
+                                    <a class="b-pagination__link" href="#">4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="b-articles b-news__content" data-tab-content="news-2">
+                            <ul class="b-articles__list">
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article3.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article2.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article1.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article4.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article5.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="b-articles__item">
+                                    <article class="b-article">
+                                        <img class="b-article__img" src="img/article6.jpg" alt="soldier">
+                                        <div class="b-article__content">
+                                            <h2 class="b-article__title">What is a Static security guard and what do
+                                                they do
+                                                in Hostile areas.
+                                            </h2>
+                                            <time class="b-article__date" datetime="24-02-2018">24.02.2018</time>
+                                            <p class="b-article__text">
+                                                Static Security guards in Hostile areas usually protect the internal
+                                                perimiter of a site and as such control entry and egress points man
+                                                control rooms and watch towers but there is far more to the job than
+                                                just standing on a gate for the whole shift.
+                                            </p>
+                                            <a class="b-article__btn b-btn b-btn_sm b-btn_arrow" href="#">
+                                                Read more
+                                            </a>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                            <ul class="b-pagination b-articles__pagination">
+                                <li class="b-pagination__item b-pagination__item_active">
+                                    <a class="b-pagination__link" href="#">1</a>
+                                </li>
+                                <li class="b-pagination__item">
+                                    <a class="b-pagination__link" href="#">2</a>
+                                </li>
+                                <li class="b-pagination__item">
+                                    <a class="b-pagination__link" href="#">3</a>
+                                </li>
+                                <li class="b-pagination__item">
+                                    <a class="b-pagination__link" href="#">4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="b-page__footer">
+            <div class="b-page__container">
+                @@include('html/_footer.html')
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

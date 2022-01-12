@@ -1,0 +1,122 @@
+.b-reviews {}
+
+.b-reviews__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.b-review__img-wrapper {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: get-vw(60px);
+
+    @include lg() {
+        width: 120px;
+        height: 120px;
+    }
+
+    @include sm() {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.b-review__avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.b-reviews__item {
+    display: flex;
+    flex: 1 1 32%;
+}
+
+.b-review__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.b-review {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #14181a;
+    border-top-left-radius: 120px;
+    padding: get-vw(60px);
+
+    @include lg() {
+        border-top-left-radius: 100px;
+    }
+
+    @include sm() {
+        border-top-left-radius: 80px;
+    }
+}
+
+.b-review__text {
+    margin-bottom: get-vw(60px);
+    font-size: 20px;
+
+    @include lg() {
+        font-size: 18px;
+    }
+}
+
+.b-person {
+    transition: opacity .2s;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        opacity: .85;
+    }
+}
+
+.b-reviews__user-info {}
+
+.b-reviews__user-info .b-person__name {
+    font-size: 18px;
+
+    @include lg() {
+        font-size: 16px;
+    }
+}
+
+@include sm() {
+    .b-erviews {
+        width: 100vw;
+        position: relative;
+        left: -40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        overflow-x: hidden;
+    }
+
+    .b-reviews__item {
+        flex: 1 0 260px;
+    }
+
+    .b-reviews__list {
+        width: 100vw;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        position: relative;
+        padding-left: 35px;
+        padding-right: 30px;
+        left: -30px;
+    }
+
+    .b-review__text,
+    .b-review__img-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .b-review {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,140 @@
+.b-graduates {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.b-graduates__nav-title {}
+
+.b-main-title {}
+
+.b-main-title_line {}
+
+.b-graduates-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    align-items: stretch;
+
+    @include lg() {
+        row-gap: 60px;
+    }
+
+    @include md() {
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+}
+
+.b-graduates__btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b-graduates__list {
+    margin-bottom: 120px;
+    row-gap: 80px;
+
+    @include md() {
+        row-gap: 60px;
+    }
+
+    @include xs() {
+        row-gap: 40px;
+    }
+}
+
+.b-graduates-list__item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 22%;
+    margin-right: auto;
+
+    @include mob() {
+        flex-basis: 100%;
+    }
+}
+
+.b-person-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-person-card__photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    flex-grow: 1;
+}
+
+.b-person-card__title {
+    @include adaptive-font(24, 16);
+    margin-bottom: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+
+}
+
+.b-person-card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @include md() {
+        margin-bottom: 20px;
+    }
+}
+
+.b-person-card__old {
+    font-size: 14px;
+    opacity: .6;
+    line-height: 1.6;
+
+    @include mob() {
+        font-size: 12px;
+    }
+}
+
+.b-person-card__location {
+    font-size: 14px;
+    opacity: .6;
+    line-height: 1.6;
+    position: relative;
+
+    &::before {
+        @extend .e-pseudo;
+        background-image: url("data:image/svg+xml,%3Csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' fill-rule='evenodd' clip-rule='evenodd' d='M2.05025 11.3137L7 16L11.9497 11.3137C14.6834 8.72554 14.6834 4.52929 11.9497 1.94113C9.21608 -0.647042 4.78392 -0.647042 2.05025 1.94113C-0.683417 4.52929 -0.683417 8.72554 2.05025 11.3137ZM7.00006 10.0001C8.65692 10.0001 10.0001 8.65692 10.0001 7.00006C10.0001 5.34321 8.65692 4.00006 7.00006 4.00006C5.34321 4.00006 4.00006 5.34321 4.00006 7.00006C4.00006 8.65692 5.34321 10.0001 7.00006 10.0001Z' fill='white'/%3E%3C/svg%3E%0A");
+        left: -20px;
+        top: 2px;
+        height: 16px;
+        width: 14px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    @include mob() {
+        font-size: 12px;
+    }
+}
+
+.b-person-card__name {
+    font-weight: 500;
+    @include adaptive-font(18, 12);
+    line-height: 1.2;
+    margin-bottom: 40px;
+
+    @include sm() {
+        font-size: 16px;
+    }
+}
+
+.b-person-card__link {
+    display: block;
+    max-width: 150px;
+}

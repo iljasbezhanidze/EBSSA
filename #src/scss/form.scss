@@ -1,0 +1,205 @@
+.b-form-section {}
+
+.b-form-section__title:after {
+    bottom: -20px;
+}
+
+.b-title {}
+
+.b-form-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.b-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-form-section__wrapper {}
+
+.b-form__row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.b-form__item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.b-form__label {
+    margin-bottom: 10px;
+    @include adaptive-font(18, 14);
+    display: block;
+    white-space: nowrap;
+}
+
+.b-form__input {
+    padding: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #ffffff63;
+    outline: transparent;
+    max-height: 62px;
+
+    &::placeholder {
+        opacity: .6;
+    }
+
+    &:focus {
+        border: 2px solid #FFFFFF;
+
+    }
+}
+
+.b-form__input_name {}
+
+.b-form__input_email {}
+
+.b-form__input_subject {}
+
+.b-form__textarea {
+    padding: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #ffffff63;
+    outline: transparent;
+    max-height: 120px;
+
+    &::placeholder {
+        opacity: .6;
+    }
+
+    &:focus {
+        border: 2px solid #FFFFFF;
+
+    }
+}
+
+.b-form__checkbox {
+    margin-bottom: 80px;
+
+    @include md() {
+        margin-bottom: 60px;
+    }
+
+    @include xs() {
+        margin-bottom: 40px;
+    }
+}
+
+.b-check {
+    display: flex;
+    align-items: center;
+}
+
+.b-check__label {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 2L5.75 10L2 6.36364' stroke='white' stroke-width='2' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    @include xs() {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+.b-check__checkbox {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+
+    &:checked+.b-check__label::after {
+        display: block;
+    }
+}
+
+.b-check__text {
+    opacity: .6;
+    @include adaptive-font(16, 12);
+}
+
+.b-check__link {
+    opacity: 1;
+    margin-left: 5px;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        transition: width .3s;
+        left: 0;
+        bottom: 0px;
+        height: 1px;
+        width: 100%;
+        display: block;
+        background-color: #fff;
+    }
+
+    &:hover {
+        opacity: .85;
+    }
+
+    &:hover:before {
+        width: 0;
+    }
+}
+
+.b-form__btn {}
+
+.b-check__label {
+    flex-shrink: 0;
+}
+
+@media(max-width: 510px) {
+
+    .b-check__agr {
+        font-size: 14px;
+    }
+
+    .b-form__row {
+        flex-wrap: wrap;
+    }
+
+    .b-form__row {
+        margin-bottom: 0;
+    }
+
+    .b-form__item {
+        margin-bottom: 20px;
+        flex: 1;
+    }
+
+
+}

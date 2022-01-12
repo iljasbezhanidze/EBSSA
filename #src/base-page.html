@@ -1,0 +1,104 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+        <link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+        <title>EBSSA</title>
+    </head>
+
+    <body>
+        @@include('html/side-frame.html')
+        @@include('html/modal.html')
+        <main class="b-page">
+            <div class="b-page__header b-page__header_static">
+                <div class="b-page__header-container">
+                    @@include('html/_header.html')
+                </div>
+            </div>
+            <div class="b-main b-page__content">
+                <section class="b-main__section b-main__section_pad-none b-main__section_bcg-img-text mb"
+                    style="background-image: url('img/landscape1.jpg');">
+                    <div class="b-main__container b-main__container_bcg-img-text">
+                        <div class="b-first-screen-img">
+                            <dh1 class="b-first-screen-img__title b-main-title">Facility in Serbia</dh1>
+                        </div>
+                    </div>
+                </section>
+                <section class="b-main__section">
+                    <div class="b-main__container">
+                        <div class="b-about-facility">
+                            <div class="b-about-facility__row b-about-facility__row_top">
+                                <h2 class="b-about-facility__nav-title b-title">About facility</h2>
+                                <div class="b-about-facility__description">
+                                    <p>
+                                        26 hectares of training ground, including different types of shooting ranges,
+                                        training zones for all types of military drills, different types of rifles and
+                                        handguns, mobile training team that can organize a course on demand.
+                                    </p>
+                                    <p>
+                                        We are ready to all type of cooperation, if you have any question don’t hesitate
+                                        to
+                                        contact us.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="b-about-facility__row b-about-facility__row_bottom">
+                                <div class="b-about-facility__secondary-description">
+                                    <p>
+                                        The Close Protection Operative course will teach you how to manage security of a
+                                        VIP, organize a security team and all the logistics of prevention.
+                                    </p>
+                                </div>
+                                <div class="b-alert-message b-about-facility__alert">
+                                    <div class="b-alert-message__inner">
+                                        26 hectares <br>
+                                        of training ground
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="b-main__section b-main__section_pad-none">
+                    @@include('html/interactive-map.html')
+                </section>
+                <section class="b-main__section">
+                    <div class="b-main__container">
+                        @@include('html/experience-cards.html')
+                    </div>
+                </section>
+                <section class="b-main__section">
+                    <div class="b-main__container">
+                        @@include('html/stats.html')
+                    </div>
+                </section>
+                <section class="b-main__section">
+                    <div class="b-main__container">
+                        @@include('html/gallery.html')
+                    </div>
+                </section>
+            </div>
+            <div class="b-page__footer">
+                <div class="b-page__container">
+                    @@include('html/_footer.html')
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+        <script src="js/script.min.js"></script>
+    </body>
+
+    </html>

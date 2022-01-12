@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>EBSSA</title>
+</head>
+
+<body>
+	@@include('html/side-frame.html')
+	@@include('html/modal.html')
+	<main class="b-page">
+		<div class="b-page__header">
+			<div class="b-page__header-container">
+				@@include('html/_header.html')
+			</div>
+		</div>
+		<div class="b-main b-page__content">
+			<section class="b-main__section b-main__section_bcg" style="background-image: url('img/first-screen.jpg');">
+				<div class="b-main__container">
+					@@include('html/first-screen.html')
+					<img class="b-first-screen__avatar" src="img/avatar-first-scren.png" alt="military men">
+					<span class="b-first-screen__maze" style="background-image: url('img/abstraction-1.svg');"></span>
+				</div>
+			</section>
+			<section class="b-main__section b-main__section-blur_right">
+				<div class="b-main__container">
+					@@include('html/row-articles.html')
+				</div>
+			</section>
+			<section class="b-main__section b-main__section-blur_right mb">
+				<div class="b-main__container">
+					@@include('html/cards-list.html')
+				</div>
+			</section>
+			<section class="b-main__section">
+				<div class="b-main__container_background b-main__container_xl">
+					@@include('html/tabs.html')
+				</div>
+			</section>
+			<section class="b-main__section b-main__section-blur_left">
+				<div class="b-main__container">
+					@@include('html/tiles.html')
+				</div>
+			</section>
+			<section class="b-main__section b-main__section_full-pad-none b-main__section_pad-none"
+				style="background-image: url(img/bcg-about-perview.svg);">
+				<div class="b-about-preview">
+					@@include('html/about-preview.html')
+				</div>
+			</section>
+			<section class="b-main__section b-main__section-blur_right">
+				<div class="b-main__container">
+					@@include('html/row-articles_persons.html')
+				</div>
+			</section>
+			<section class="b-main__section b-main__section-blur_right mb">
+				<div class="b-main__container">
+					@@include('html/reviews-list.html')
+				</div>
+			</section>
+			<section class="b-main__section">
+				<div class="b-main__container">
+					@@include('html/accordeon.html')
+				</div>
+			</section>
+			<section class="b-main__section">
+				<div class="b-main__container">
+					@@include('html/gallery.html')
+				</div>
+			</section>
+			<section class="b-main__section b-main__section-blur_center mb">
+				<div class="b-main__container">
+					<div class="b-about-preview__container">
+						<div class="b-about-preview__content">
+							<img class="b-about-preview__img" src="img/online.jpg" alt="">
+						</div>
+
+						<div class="b-short-descr b-about-preview__text b-about-preview__text_pad-none">
+							<h2 class="b-short-descr__titile b-title">
+								Can't come to us?
+								Join us online!
+							</h2>
+							<p class="b-short-descr__text">
+								The Close Protection Operative course will teach you how to manage security of a VIP,
+								organize a security
+								team and all the logistics of prevention.
+							</p>
+
+							<a class="b-short-descr__btn b-btn b-btn_arrow" href="#">Visit EBSSA Online</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="b-main__section mb" style="background-image: url('img/bcg-gorm.svg');">
+				<div class="b-main__container b-main__container_centered">
+					<div class="b-form-container">@@include('html/form.html')</div>
+				</div>
+			</section>
+		</div>
+		<div class="b-page__footer">
+			<div class="b-page__container">
+				@@include('html/_footer.html')
+			</div>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

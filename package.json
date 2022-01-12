@@ -1,0 +1,29 @@
+{
+	"name": "fls-gulp",
+	"version": "1.0.0",
+	"description": "Сборка gulp",
+	"main": "index.html",
+	"author": "Fls",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "latest",
+		"del": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-clean-css": "latest",
+		"gulp-file-include": "latest",
+		"gulp-fonter": "latest",
+		"gulp-group-css-media-queries": "latest",
+		"gulp-sass": "latest",
+		"sass": "latest",
+		"gulp-uglify-es": "latest",
+		"transform-runtime": "0.0.0",
+		"gulp-imagemin": "7.1.0",
+		"gulp-newer": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-ttf2woff": "latest",
+		"gulp-ttf2woff2": "latest",
+		"gulp-svg-sprite": "latest"
+	}
+}
