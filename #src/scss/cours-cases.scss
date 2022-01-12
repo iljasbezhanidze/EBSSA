@@ -15,6 +15,7 @@
     max-width: 256px;
     padding-left: 44px;
     position: relative;
+    flex-wrap: wrap;
 
     &::before {
         content: '';
@@ -35,13 +36,22 @@
     }
 
     @include md() {
-        min-width: 47%;
+        width: 100%;
+    }
+
+    @media(max-width: 632px) {
+        min-width: 100%;
     }
 }
 
 .b-course-cases__item {
-    @include md() {
-        margin-bottom: 60px;
+    margin-bottom: 40px;
+    flex: 1 1 19%;
+
+    &:not(:last-child) {
+        @include md() {
+            margin-bottom: 60px;
+        }
     }
 
     @include xs() {
@@ -50,6 +60,7 @@
         flex: 1;
         margin-bottom: 40px;
     }
+
 }
 
 .b-case {}

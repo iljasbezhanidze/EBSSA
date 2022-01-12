@@ -19,16 +19,12 @@
     margin-bottom: 5px;
     line-height: 1.8;
 
+    @include lg() {
+        padding-left: 0;
+    }
+
     @include xs() {
         line-height: 1.5;
         font-size: 16px;
     }
-}
-
-.b-topics__wrapper {
-
-    @include lg() {
-        padding-left: 15px;
-    }
-
 }

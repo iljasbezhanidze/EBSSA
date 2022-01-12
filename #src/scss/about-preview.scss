@@ -147,17 +147,7 @@
     }
 }
 
-.b-about-preview__img {
-    // @include lg() {
-    //     padding-right: 80px;
-    // }
-    // @include xs() {
-    //     padding-right: 60px;
-    // }
-    // @include mob() {
-    //     padding-right: 40px;
-    // }
-}
+
 
 .b-about-preview__text {
     max-width: get-vw(680px);
@@ -177,7 +167,9 @@
         max-width: 49vw;
     }
 
-
+    // @include sm() {
+    //     padding-bottom: 0;
+    // }
 
     @include xl() {
         height: auto;
@@ -264,5 +256,13 @@
 
     &:hover {
         opacity: 1;
+    }
+}
+
+@media(min-width: 1170px) {
+
+    .b-about-preview__content img,
+    .b-about-preview__content iframe {
+        aspect-ratio: 1/0.8;
     }
 }
