@@ -14,18 +14,34 @@
 
 .b-prices__table {}
 
-.b-table__head {
+.b-table__row {
     position: relative;
 
-    &:before {
+    &:after {
         content: '';
         position: absolute;
-        height: 1px;
-        width: 100%;
         left: 0;
-        bottom: 0;
+        right: 0;
+        height: 2px;
+        bottom: -2px;
+        background-color: #1B1F21;
+    }
+
+    &:last-child:not(.b-table__row_head):after {
+        display: none;
+    }
+}
+
+.b-table__head .b-table__row {
+    position: relative;
+
+    &:after {
         background-color: var(--accent-color);
-        display: block;
+        height: 4px;
+
+        @include sm() {
+            display: none;
+        }
     }
 }
 
@@ -33,21 +49,15 @@
 
 .b-table__row_head {}
 
+
+
 .b-table__cell {
     padding-top: 33px;
     padding-bottom: 33px;
     padding-left: get-vw(40px);
-    position: relative;
     font-size: 16px;
 
-    &::after {
-        @extend .e-pseudo;
-        bottom: -2px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #1B1F21;
-    }
+
 }
 
 .b-table__cell_title {
@@ -55,6 +65,7 @@
     padding-bottom: 20px;
     font-size: 14px;
 }
+
 
 .b-table__link {}
 

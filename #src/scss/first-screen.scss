@@ -3,7 +3,8 @@
     position: relative;
     @extend .e-flex-align-center;
     width: 100%;
-    justify-content: flex-start !important;
+    justify-content: flex-start;
+    justify-items: flex-start;
 
     @include md() {
         height: 90vh;

@@ -37,7 +37,6 @@
 .b-form-breadcrumbs__item::after,
 .b-departament__punkt:after,
 .b-person-card__location::before,
-.b-table__cell::after,
 .b-tiles_not-numbers .b-tiles__item::after,
 .b-tiles > li:before,
 .b-burger__line::before,
@@ -731,6 +730,12 @@ body {
   bottom: 0;
   width: 40px;
   z-index: 999;
+  opacity: 0.2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scaleY(1.5);
+      -ms-transform: scaleY(1.5);
+          transform: scaleY(1.5);
 }
 
 .b-badge {
@@ -825,6 +830,14 @@ body {
   .b-tabs__btn-more {
     display: inline-block;
   }
+}
+
+.pb-none {
+  padding-bottom: 0 !important;
+}
+
+.opacity-none {
+  opacity: 1 !important;
 }
 
 .b-header__nav {
@@ -1068,9 +1081,10 @@ body {
   height: 100vh;
   position: relative;
   width: 100%;
-  -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: flex-start !important;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  justify-items: flex-start;
 }
 
 .b-first-screen__content {
@@ -1301,8 +1315,12 @@ body {
 }
 
 .b-tabs__title {
-  max-width: 356px;
   margin-bottom: 6.25vw;
+}
+
+.b-tabs__title.b-title,
+.b-tabs__title.b-title_center {
+  max-width: 356px;
 }
 
 .b-tabs__buttons {
@@ -1370,15 +1388,15 @@ body {
   position: relative;
   margin-bottom: 6.25vw;
   list-style-type: none;
-  counter-reset: umqbwmx;
+  counter-reset: umqbzei;
 }
 
 .b-tabs__locations > li {
-  counter-increment: umqbwmx;
+  counter-increment: umqbzei;
 }
 
 .b-tabs__locations > li:before {
-  content: "" counter(umqbwmx) "\a";
+  content: "" counter(umqbzei) "\a";
   width: 50px;
   height: 50px;
   border: 4px solid var(--accent-grey);
@@ -1455,15 +1473,15 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   list-style-type: none;
-  counter-reset: umqbwn4;
+  counter-reset: umqbzep;
 }
 
 .b-tiles > li {
-  counter-increment: umqbwn4;
+  counter-increment: umqbzep;
 }
 
 .b-tiles > li:before {
-  content: "" counter(umqbwn4) "\a";
+  content: "" counter(umqbzep) "\a";
   color: #101314;
   font-size: 18px;
   font-weight: 700;
@@ -2317,7 +2335,7 @@ body {
 }
 
 .b-course-page__first-screen {
-  height: 90vh;
+  height: auto;
 }
 
 .b-first-screen__content_short-width {
@@ -2421,35 +2439,38 @@ body {
   background: #15181A;
 }
 
-.b-table__head {
+.b-table__row {
   position: relative;
 }
 
-.b-table__head:before {
+.b-table__row:after {
   content: "";
   position: absolute;
-  height: 1px;
-  width: 100%;
   left: 0;
-  bottom: 0;
+  right: 0;
+  height: 2px;
+  bottom: -2px;
+  background-color: #1B1F21;
+}
+
+.b-table__row:last-child:not(.b-table__row_head):after {
+  display: none;
+}
+
+.b-table__head .b-table__row {
+  position: relative;
+}
+
+.b-table__head .b-table__row:after {
   background-color: var(--accent-color);
-  display: block;
+  height: 4px;
 }
 
 .b-table__cell {
   padding-top: 33px;
   padding-bottom: 33px;
   padding-left: 2.0833333333vw;
-  position: relative;
   font-size: 16px;
-}
-
-.b-table__cell::after {
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #1B1F21;
 }
 
 .b-table__cell_title {
@@ -2667,15 +2688,15 @@ body {
 
 .b-interactive-map__points-list {
   list-style-type: none;
-  counter-reset: umqbwn8;
+  counter-reset: umqbzf4;
 }
 
 .b-interactive-map__points-list > li {
-  counter-increment: umqbwn8;
+  counter-increment: umqbzf4;
 }
 
 .b-interactive-map__points-list > li:before {
-  content: "" counter(umqbwn8) "\a";
+  content: "" counter(umqbzf4) "\a";
   line-height: 54px;
   position: absolute;
   left: 50%;
@@ -3920,15 +3941,15 @@ body {
           justify-content: space-between;
   position: relative;
   list-style-type: none;
-  counter-reset: umqbwnf;
+  counter-reset: umqbzft;
 }
 
 .b-form-breadcrumbs > li {
-  counter-increment: umqbwnf;
+  counter-increment: umqbzft;
 }
 
 .b-form-breadcrumbs > li:before {
-  content: "" counter(umqbwnf) "\a";
+  content: "" counter(umqbzft) "\a";
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;
@@ -4721,7 +4742,7 @@ body {
 @media (min-width: 1170px) {
   .b-about-preview__content img,
   .b-about-preview__content iframe {
-    aspect-ratio: 1/0.8;
+    aspect-ratio: 1/0.85;
   }
 }
 
@@ -6082,6 +6103,10 @@ body {
 
   .b-course-page__first-screen .b-first-screen__content {
     min-width: 100%;
+  }
+
+  .b-table__head .b-table__row:after {
+    display: none;
   }
 
   .b-prices > table {

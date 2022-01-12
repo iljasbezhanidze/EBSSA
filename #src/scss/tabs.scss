@@ -17,16 +17,19 @@
 }
 
 .b-tabs__title {
-    max-width: 356px;
     margin-bottom: 6.25vw;
 
     @include md() {
         max-width: 100%;
         margin-bottom: 12vw;
     }
+
+    &.b-title {
+        max-width: 356px;
+    }
 }
 
-.b-title {}
+
 
 .b-tabs__buttons {
     border: 2px solid #252B2E;
