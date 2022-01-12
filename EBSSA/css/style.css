@@ -1360,15 +1360,15 @@ body {
   position: relative;
   margin-bottom: 6.25vw;
   list-style-type: none;
-  counter-reset: uflus3z;
+  counter-reset: uflus8g;
 }
 
 .b-tabs__locations > li {
-  counter-increment: uflus3z;
+  counter-increment: uflus8g;
 }
 
 .b-tabs__locations > li:before {
-  content: "" counter(uflus3z) "\a";
+  content: "" counter(uflus8g) "\a";
   width: 50px;
   height: 50px;
   border: 4px solid var(--accent-grey);
@@ -1448,15 +1448,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   list-style-type: none;
-  counter-reset: uflus4b;
+  counter-reset: uflus8w;
 }
 
 .b-tiles > li {
-  counter-increment: uflus4b;
+  counter-increment: uflus8w;
 }
 
 .b-tiles > li:before {
-  content: "" counter(uflus4b) "\a";
+  content: "" counter(uflus8w) "\a";
   color: #101314;
   font-size: 18px;
   font-weight: 700;
@@ -1669,6 +1669,7 @@ body {
   height: 100%;
 }
 
+.b-article-content_video .b-video__preview,
 .b-about-preview .b-video__preview {
   opacity: 0.4;
   -webkit-transition: opacity 0.3s;
@@ -1677,6 +1678,7 @@ body {
   cursor: pointer;
 }
 
+.b-article-content_video .b-video__preview:hover,
 .b-about-preview .b-video__preview:hover {
   opacity: 1;
 }
@@ -2641,15 +2643,15 @@ body {
 
 .b-interactive-map__points-list {
   list-style-type: none;
-  counter-reset: uflus51;
+  counter-reset: uflus9v;
 }
 
 .b-interactive-map__points-list > li {
-  counter-increment: uflus51;
+  counter-increment: uflus9v;
 }
 
 .b-interactive-map__points-list > li:before {
-  content: "" counter(uflus51) "\a";
+  content: "" counter(uflus9v) "\a";
   line-height: 54px;
   position: absolute;
   left: 50%;
@@ -3894,15 +3896,15 @@ body {
           justify-content: space-between;
   position: relative;
   list-style-type: none;
-  counter-reset: uflus55;
+  counter-reset: uflusad;
 }
 
 .b-form-breadcrumbs > li {
-  counter-increment: uflus55;
+  counter-increment: uflusad;
 }
 
 .b-form-breadcrumbs > li:before {
-  content: "" counter(uflus55) "\a";
+  content: "" counter(uflusad) "\a";
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;

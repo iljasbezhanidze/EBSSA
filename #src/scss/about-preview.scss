@@ -111,11 +111,6 @@
         min-width: 100vw;
         aspect-ratio: 16/9;
     }
-
-    @media(max-width: 660px) {
-        // min-width: 100vw;
-        // transform: translateX(-7px);
-    }
 }
 
 .b-video__play {
@@ -261,6 +256,7 @@
     }
 }
 
+.b-article-content_video .b-video__preview,
 .b-about-preview .b-video__preview {
     opacity: .4;
     transition: opacity .3s;
