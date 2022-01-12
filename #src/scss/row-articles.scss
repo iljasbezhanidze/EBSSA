@@ -1,5 +1,5 @@
 .b-row-articles__list {
-    @extend .e-between;
+    display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
     row-gap: 40px;
@@ -13,12 +13,17 @@
     flex: 1 1 24%;
     max-width: 24.3%;
 
-    @include xl() {
-        flex: 1 1 49%;
+    @include md() {
+        flex: 1 1 30%;
+        max-width: 32.3%;
+    }
+
+    @include xs() {
+        flex: 1 1 48%;
         max-width: 49.3%;
     }
 
-    @include md() {
+    @include mob() {
         flex: 1 1 100%;
         max-width: 100%;
     }
@@ -58,7 +63,7 @@
 .b-person {}
 
 .b-person__name {
-    font-size: 24px;
+    @include adaptive-font(24, 16);
     font-weight: 500;
     margin-bottom: 5px;
     line-height: 1.2;

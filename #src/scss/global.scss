@@ -44,9 +44,12 @@ body {
             padding-top: 67px;
             padding-bottom: 67px;
 
-            @include lg() {
+            @media(max-width: 1200px) {
                 padding-right: 40px;
                 padding-left: 40px;
+            }
+
+            @include lg() {
                 max-width: 100%;
                 padding-top: 47px;
                 padding-bottom: 47px;

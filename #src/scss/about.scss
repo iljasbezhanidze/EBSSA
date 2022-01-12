@@ -22,14 +22,34 @@
     }
 }
 
+.b-about-first-screen__row_pad-inline {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media(max-width: 1200px) {
+    .b-about-first-screen__row_pad-inline {
+        padding-left: 45px;
+        padding-right: 30px;
+    }
+}
+
 .b-about-first-screen__col {
     max-width: 680px;
     height: auto;
     flex: 1 1 47%;
+    font-size: 18;
+
+    @include mob() {
+        font-size: 16px;
+    }
 
     @include sm() {
         width: 100%;
     }
+
+
+
 }
 
 
@@ -44,7 +64,7 @@
 }
 
 .b-about-first-screen__text_accent {
-    @include adaptive-font(22, 18)
+    @include adaptive-font(22, 16)
 }
 
 .b-about-first-screen__video {
