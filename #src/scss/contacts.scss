@@ -82,6 +82,7 @@
     @include mob() {
         line-height: 1.6;
         font-size: 13px;
+        word-break: break-word;
     }
 }
 
