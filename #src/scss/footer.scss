@@ -106,7 +106,9 @@
 
     & .b-footer__partners {}
 
-    & .b-partners__logo {}
+    & .b-partners__logo {
+        max-width: 250px;
+    }
 
     .b-footer__bottom {
         display: flex;

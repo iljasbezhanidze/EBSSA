@@ -33,6 +33,7 @@
 .b-article-previe__picture {
     margin-bottom: 40px;
     object-fit: cover;
+    aspect-ratio: 16/10;
     // height: 12vw;
 
     @include xl() {

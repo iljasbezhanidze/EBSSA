@@ -749,8 +749,10 @@ body {
 
 .b-main__section_bcg-img-text {
   width: 100%;
-  padding-top: 16.375vw;
-  padding-bottom: 16.375vw;
+  padding-top: 13.6458333333vw;
+  padding-bottom: 13.6458333333vw;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .b-main__section_bcg-bottom-left {
@@ -1011,6 +1013,10 @@ body {
   opacity: 1;
 }
 
+.b-footer .b-partners__logo {
+  max-width: 250px;
+}
+
 .b-footer .b-footer__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1131,6 +1137,7 @@ body {
   margin-bottom: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 16/10;
 }
 
 .b-article-preview__description {
@@ -1360,15 +1367,15 @@ body {
   position: relative;
   margin-bottom: 6.25vw;
   list-style-type: none;
-  counter-reset: uflus8g;
+  counter-reset: ufluspe;
 }
 
 .b-tabs__locations > li {
-  counter-increment: uflus8g;
+  counter-increment: ufluspe;
 }
 
 .b-tabs__locations > li:before {
-  content: "" counter(uflus8g) "\a";
+  content: "" counter(ufluspe) "\a";
   width: 50px;
   height: 50px;
   border: 4px solid var(--accent-grey);
@@ -1448,15 +1455,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   list-style-type: none;
-  counter-reset: uflus8w;
+  counter-reset: uflusq8;
 }
 
 .b-tiles > li {
-  counter-increment: uflus8w;
+  counter-increment: uflusq8;
 }
 
 .b-tiles > li:before {
-  content: "" counter(uflus8w) "\a";
+  content: "" counter(uflusq8) "\a";
   color: #101314;
   font-size: 18px;
   font-weight: 700;
@@ -2643,15 +2650,15 @@ body {
 
 .b-interactive-map__points-list {
   list-style-type: none;
-  counter-reset: uflus9v;
+  counter-reset: uflusr1;
 }
 
 .b-interactive-map__points-list > li {
-  counter-increment: uflus9v;
+  counter-increment: uflusr1;
 }
 
 .b-interactive-map__points-list > li:before {
-  content: "" counter(uflus9v) "\a";
+  content: "" counter(uflusr1) "\a";
   line-height: 54px;
   position: absolute;
   left: 50%;
@@ -2720,6 +2727,7 @@ body {
      object-fit: cover;
   width: 16.6666666667vw;
   height: 100%;
+  max-height: 320px;
 }
 
 .b-enviroment {
@@ -2734,7 +2742,6 @@ body {
           align-items: center;
   background: #202427;
   border-radius: 40px;
-  white-space: nowrap;
   font-size: 12px;
 }
 
@@ -3896,15 +3903,15 @@ body {
           justify-content: space-between;
   position: relative;
   list-style-type: none;
-  counter-reset: uflusad;
+  counter-reset: uflusry;
 }
 
 .b-form-breadcrumbs > li {
-  counter-increment: uflusad;
+  counter-increment: uflusry;
 }
 
 .b-form-breadcrumbs > li:before {
-  content: "" counter(uflusad) "\a";
+  content: "" counter(uflusry) "\a";
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;
