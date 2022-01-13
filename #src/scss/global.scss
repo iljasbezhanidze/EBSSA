@@ -744,11 +744,7 @@ body {
     background-color: #27292b;
     color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
-
-
-    @include xl() {
-        font-size: 12px;
-    }
+    font-size: 12px;
 
     @include mob() {
         padding: 10px 15px 10px;

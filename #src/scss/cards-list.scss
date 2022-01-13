@@ -10,6 +10,10 @@
     }
 }
 
+.b-cads-list__title {
+    font-weight: 500;
+}
+
 @include xs() {
     .b-cads-list__title {
         margin-bottom: 12vw;
@@ -114,11 +118,14 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @include xs() {
+    @media(max-width:680px) {
         flex: 0 1 100%;
+        max-width: 100% !important;
         height: auto;
         margin-bottom: 40px;
     }
+
+
 }
 
 .b-card__title {
@@ -143,6 +150,10 @@
     @include mob() {
         min-width: initial;
     }
+
+    @media(max-width: 520px) {
+        min-width: auto;
+    }
 }
 
 .b-card__description {
@@ -150,6 +161,7 @@
     font-size: 14px;
     opacity: .6;
     font-weight: 400;
+    line-height: 1.8;
 }
 
 .b-card__inner-right-col {
@@ -171,6 +183,7 @@
 
         & .b-card__col-row {
             max-width: 150px;
+            margin-bottom: 40px;
 
             @media(max-width: 520px) {
                 display: flex;
@@ -179,16 +192,26 @@
                 align-items: baseline;
                 max-width: 100%;
 
-                &:not(:last-child) {
-                    margin-bottom: 40px;
+                @media(max-width: 680px) {
+                    margin-bottom: 0;
+                }
+
+                @include mob() {
+                    &:first-child {
+                        margin-bottom: 30px;
+                    }
                 }
             }
         }
     }
 
-    @media(max-width: 520px) {
-        flex-direction: column;
+    @media(max-width: 680px) {
+        flex-direction: row;
     }
+
+    // @media(max-width: 520px) {
+    //     flex-direction: column;
+    // }
 }
 
 .b-card__price {
@@ -231,7 +254,7 @@
     display: block;
 }
 
-.b-card__btn-details {
+.b-card__col-row_btns .b-card__btn-details:not(:last-child) {
     margin-bottom: 10px;
 
     @include xs() {
@@ -244,6 +267,10 @@
         flex: 1 1 100%;
         max-width: 100%;
     }
+}
+
+.b-card__btn-details {
+    font-size: 16px !important;
 }
 
 .b-border-none {}
@@ -261,5 +288,53 @@
     .b-cads-list {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media(max-width: 520px) {
+
+    .b-card__price,
+    .b-card__country {
+        min-width: 100%;
+    }
+
+    .b-card__inner-right-col .b-card__col-row {
+        max-width: 49%;
+    }
+}
+
+@include mob() {
+
+    .b-card__inner-right-col {
+        flex-direction: column;
+
+        & .b-card__col-row {
+            min-width: 100%;
+            max-width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .b-card__price,
+    .b-card__country {
+        min-width: 47%;
+    }
+
+    .b-card__country,
+    .b-card__date {
+        text-align: right;
+    }
+
+    .b-card__price {
+        margin-bottom: 0;
+    }
+}
+
+@include mob() {
+    .b-card__inner {
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 }
