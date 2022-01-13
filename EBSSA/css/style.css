@@ -825,6 +825,7 @@ body {
 .b-cads-list__btn,
 .b-table__cell_btn,
 .b-person-card__link,
+.b-article__btn,
 .b-tabs__btn-more {
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
@@ -839,6 +840,7 @@ body {
   .b-cads-list__btn,
   .b-table__cell_btn,
   .b-person-card__link,
+  .b-article__btn,
   .b-tabs__btn-more {
     display: inline-block;
   }
@@ -1409,15 +1411,15 @@ body {
   position: relative;
   margin-bottom: 6.25vw;
   list-style-type: none;
-  counter-reset: uyv6d13;
+  counter-reset: uyv6d9q;
 }
 
 .b-tabs__locations > li {
-  counter-increment: uyv6d13;
+  counter-increment: uyv6d9q;
 }
 
 .b-tabs__locations > li:before {
-  content: "" counter(uyv6d13) "\a";
+  content: "" counter(uyv6d9q) "\a";
   width: 50px;
   height: 50px;
   border: 4px solid var(--accent-grey);
@@ -1494,15 +1496,15 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   list-style-type: none;
-  counter-reset: uyv6d1h;
+  counter-reset: uyv6da7;
 }
 
 .b-tiles > li {
-  counter-increment: uyv6d1h;
+  counter-increment: uyv6da7;
 }
 
 .b-tiles > li:before {
-  content: "" counter(uyv6d1h) "\a";
+  content: "" counter(uyv6da7) "\a";
   color: #101314;
   font-size: 18px;
   font-weight: 700;
@@ -2709,15 +2711,15 @@ body {
 
 .b-interactive-map__points-list {
   list-style-type: none;
-  counter-reset: uyv6d2b;
+  counter-reset: uyv6db5;
 }
 
 .b-interactive-map__points-list > li {
-  counter-increment: uyv6d2b;
+  counter-increment: uyv6db5;
 }
 
 .b-interactive-map__points-list > li:before {
-  content: "" counter(uyv6d2b) "\a";
+  content: "" counter(uyv6db5) "\a";
   line-height: 54px;
   position: absolute;
   left: 50%;
@@ -3348,8 +3350,8 @@ body {
   opacity: 0.6;
   font-size: 18px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 49%;
-          flex: 1 1 49%;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
   text-align: right;
 }
 
@@ -3359,6 +3361,7 @@ body {
           flex: 1 1 calc(50% - 4.1666666667vw);
   font-size: 14px;
   opacity: 0.6;
+  line-height: 1.8;
 }
 
 .b-article__btn {
@@ -3369,6 +3372,7 @@ body {
           flex: 1 1 calc(50% - 4.1666666667vw);
   max-height: 56px;
   margin-top: auto;
+  white-space: nowrap;
 }
 
 .b-pagination {
@@ -3965,15 +3969,15 @@ body {
           justify-content: space-between;
   position: relative;
   list-style-type: none;
-  counter-reset: uyv6d31;
+  counter-reset: uyv6db6;
 }
 
 .b-form-breadcrumbs > li {
-  counter-increment: uyv6d31;
+  counter-increment: uyv6db6;
 }
 
 .b-form-breadcrumbs > li:before {
-  content: "" counter(uyv6d31) "\a";
+  content: "" counter(uyv6db6) "\a";
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;

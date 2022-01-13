@@ -90,7 +90,7 @@
 .b-article__date {
     opacity: .6;
     font-size: 18px;
-    flex: 1 1 49%;
+    flex: 1 1 20%;
     text-align: right;
 }
 
@@ -98,6 +98,7 @@
     flex: 1 1 calc(50% - get-vw(80px));
     font-size: 14px;
     opacity: .6;
+    line-height: 1.8;
 }
 
 .b-article__btn {
@@ -106,6 +107,7 @@
     flex: 1 1 calc(50% - get-vw(80px));
     max-height: 56px;
     margin-top: auto;
+    white-space: nowrap;
 }
 
 @include lg() {
