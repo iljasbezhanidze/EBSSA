@@ -176,7 +176,9 @@
     }
 }
 
-.b-form__btn {}
+.b-form__btn {
+    white-space: nowrap;
+}
 
 .b-check__label {
     flex-shrink: 0;

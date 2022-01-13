@@ -1,11 +1,5 @@
 // @include child-counter('> li', '', '\a')
 
-.b-page__content_sing-up-bgc {
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-}
-
 .b-page__content.b-page-content_sing-up-bgc {
     background-repeat: no-repeat;
 }
@@ -71,6 +65,7 @@
     padding-top: get-vw(50px);
     padding-bottom: get-vw(50px);
     position: relative;
+    max-width: 33%;
 
     &::after {
         clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%, 0 0);
@@ -120,6 +115,11 @@
     line-height: 140%;
     font-weight: 400;
 }
+
+// .b-form-breadcrumbs__step-count,
+// .b-form-breadcrumbs__page-description {
+//     max-width: 80%;
+// }
 
 
 .b-form-breadcrumbs__item_next {
@@ -352,6 +352,12 @@
     &.current-order:not(.b-order__row_title) {
         background-color: #1B1F21;
     }
+
+}
+
+.b-order__row.b-order__row_title {
+    border-color: transparent;
+    pointer-events: none;
 }
 
 .b-order__row_title {
@@ -483,6 +489,18 @@
     }
 }
 
+.b-pay_credit .b-pay__table {
+    margin-bottom: 80px;
+
+    @include md() {
+        margin-bottom: 50px;
+    }
+
+    @include xs() {
+        margin-bottom: 30px;
+    }
+}
+
 .b-pay__cell {
     width: 49%;
     display: inline-block;
@@ -515,6 +533,11 @@
 .b-pay__btn {
     display: inline-block;
     width: max-content;
+
+    @include mob() {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .b-btn {}
@@ -574,6 +597,9 @@
 .b-last-step__btn {
     display: block;
     width: max-content;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 @include xs() {
@@ -608,14 +634,31 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
-    .b-pay__cell {
-        width: 100%;
-    }
 }
 
 @include mob() {
     .b-form__parth_pad-none {
         padding-bottom: 0;
+    }
+}
+
+@include sm() {
+    .b-pay__table-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .b-pay__cell {
+        width: initial;
+    }
+
+    .b-pay__table-row .b-pay__cell:first-child {
+        text-align: start;
+    }
+
+    .b-pay__table-row .b-pay__cell:last-child {
+        text-align: end;
     }
 }

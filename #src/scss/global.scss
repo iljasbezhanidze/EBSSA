@@ -71,6 +71,13 @@ body {
 
 }
 
+
+.b-page_sing-up-bgc {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 160px;
+}
+
 .b-page__header {
     z-index: 999;
 }
@@ -856,7 +863,8 @@ body {
 
 .b-title-box__btn,
 .b-cads-list__btn,
-.b-table__cell_btn,
+
+_btn,
 .b-person-card__link,
 .b-article__btn,
 .b-tabs__btn-more {
