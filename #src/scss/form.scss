@@ -178,6 +178,11 @@
 
 .b-form__btn {
     white-space: nowrap;
+
+    @include mob() {
+        padding-left: 20px;
+        padding-right: 60px !important;
+    }
 }
 
 .b-check__label {

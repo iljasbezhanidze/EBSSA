@@ -155,8 +155,11 @@
     padding-bottom: 40px;
 
     @include xl() {
-        padding-right: 30px;
         padding-left: 45px;
+    }
+
+    @media(max-width: 1100px) {
+        padding-right: 30px;
     }
 
     @media(max-width: 1727px) {
@@ -177,6 +180,11 @@
 
     @include lg() {
         max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    @include xs() {
+        margin-bottom: 0;
     }
 }
 

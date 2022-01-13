@@ -147,7 +147,7 @@
 .b-card__inner .b-card__col-row:first-child {
     min-width: 250px;
 
-    @include mob() {
+    @media(max-width: 1124px) and (min-width: 960px) {
         min-width: initial;
     }
 

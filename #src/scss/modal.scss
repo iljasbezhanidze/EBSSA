@@ -56,6 +56,10 @@
     text-align: left;
     display: none;
 
+    @media(orientation: landscape) {
+        margin-top: 0;
+    }
+
     @include sm() {
         padding: 50px;
     }

@@ -72,10 +72,13 @@
         @extend .e-pseudo;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: -9px;
         right: 0;
         display: block;
+    }
 
+    &:first-child:after {
+        left: 0;
     }
 
     &:first-child::after {
@@ -137,6 +140,7 @@
 .b-radios__body {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .b-radios__title {

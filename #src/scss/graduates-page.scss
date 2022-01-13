@@ -153,7 +153,11 @@
     width: 100%;
 }
 
-.b-contacts-nav__btn {}
+.b-contacts-nav__btn {
+    @include mob() {
+        --padding-btn-inline: 25px;
+    }
+}
 
 .b-contacts-nav__btn_contact {
     max-width: max-content;

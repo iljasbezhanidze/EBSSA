@@ -8,6 +8,10 @@
 
 .b-prices__table-nav {
     @extend [class*="__nav-title"];
+
+    @include md() {
+        margin-bottom: 0 !important;
+    }
 }
 
 @include mob() {

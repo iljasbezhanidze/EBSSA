@@ -18,7 +18,7 @@
         & ol {
             @include adaptive-font(24, 16);
             line-height: 1.6;
-            opacity: .8;
+            opacity: .6;
             font-weight: 400;
 
             &:not(:last-child) {
