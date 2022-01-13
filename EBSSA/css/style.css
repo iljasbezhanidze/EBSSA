@@ -824,6 +824,7 @@ body {
 .b-title-box__btn,
 .b-cads-list__btn,
 .b-table__cell_btn,
+.b-person-card__link,
 .b-tabs__btn-more {
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
@@ -837,6 +838,7 @@ body {
   .b-title-box__btn,
   .b-cads-list__btn,
   .b-table__cell_btn,
+  .b-person-card__link,
   .b-tabs__btn-more {
     display: inline-block;
   }
@@ -1407,15 +1409,15 @@ body {
   position: relative;
   margin-bottom: 6.25vw;
   list-style-type: none;
-  counter-reset: uyv6c3z;
+  counter-reset: uyv6d13;
 }
 
 .b-tabs__locations > li {
-  counter-increment: uyv6c3z;
+  counter-increment: uyv6d13;
 }
 
 .b-tabs__locations > li:before {
-  content: "" counter(uyv6c3z) "\a";
+  content: "" counter(uyv6d13) "\a";
   width: 50px;
   height: 50px;
   border: 4px solid var(--accent-grey);
@@ -1492,15 +1494,15 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   list-style-type: none;
-  counter-reset: uyv6c4w;
+  counter-reset: uyv6d1h;
 }
 
 .b-tiles > li {
-  counter-increment: uyv6c4w;
+  counter-increment: uyv6d1h;
 }
 
 .b-tiles > li:before {
-  content: "" counter(uyv6c4w) "\a";
+  content: "" counter(uyv6d1h) "\a";
   color: #101314;
   font-size: 18px;
   font-weight: 700;
@@ -2707,15 +2709,15 @@ body {
 
 .b-interactive-map__points-list {
   list-style-type: none;
-  counter-reset: uyv6c5p;
+  counter-reset: uyv6d2b;
 }
 
 .b-interactive-map__points-list > li {
-  counter-increment: uyv6c5p;
+  counter-increment: uyv6d2b;
 }
 
 .b-interactive-map__points-list > li:before {
-  content: "" counter(uyv6c5p) "\a";
+  content: "" counter(uyv6d2b) "\a";
   line-height: 54px;
   position: absolute;
   left: 50%;
@@ -2986,9 +2988,10 @@ body {
           flex-grow: 1;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  -ms-flex-preferred-size: 22%;
-      flex-basis: 22%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   margin-right: auto;
+  max-width: 23%;
 }
 
 .b-person-card {
@@ -3036,6 +3039,8 @@ body {
   font-size: 14px;
   opacity: 0.6;
   line-height: 1.6;
+  white-space: nowrap;
+  margin-right: 40px;
 }
 
 .b-person-card__location {
@@ -3047,7 +3052,7 @@ body {
 
 .b-person-card__location::before {
   background-image: url("data:image/svg+xml,%3Csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' fill-rule='evenodd' clip-rule='evenodd' d='M2.05025 11.3137L7 16L11.9497 11.3137C14.6834 8.72554 14.6834 4.52929 11.9497 1.94113C9.21608 -0.647042 4.78392 -0.647042 2.05025 1.94113C-0.683417 4.52929 -0.683417 8.72554 2.05025 11.3137ZM7.00006 10.0001C8.65692 10.0001 10.0001 8.65692 10.0001 7.00006C10.0001 5.34321 8.65692 4.00006 7.00006 4.00006C5.34321 4.00006 4.00006 5.34321 4.00006 7.00006C4.00006 8.65692 5.34321 10.0001 7.00006 10.0001Z' fill='white'/%3E%3C/svg%3E%0A");
-  left: -20px;
+  left: -23px;
   top: 2px;
   height: 16px;
   width: 14px;
@@ -3960,15 +3965,15 @@ body {
           justify-content: space-between;
   position: relative;
   list-style-type: none;
-  counter-reset: uyv6c5q;
+  counter-reset: uyv6d31;
 }
 
 .b-form-breadcrumbs > li {
-  counter-increment: uyv6c5q;
+  counter-increment: uyv6d31;
 }
 
 .b-form-breadcrumbs > li:before {
-  content: "" counter(uyv6c5q) "\a";
+  content: "" counter(uyv6d31) "\a";
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;
@@ -5649,6 +5654,12 @@ body {
     row-gap: 60px;
   }
 
+  .b-graduates-list__item {
+    max-width: 32%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+
   .b-person-card__info {
     margin-bottom: 20px;
   }
@@ -6593,6 +6604,12 @@ body {
     overflow: unset;
     min-width: 100%;
   }
+
+  .b-graduates-list__item {
+    max-width: 49%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -7252,6 +7269,14 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .b-graduates-list__item {
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
 @media (max-width: 420px) {
   .b-main__section_pad-xl {
     padding-bottom: 40px;
@@ -7436,11 +7461,6 @@ body {
 
   .b-about-first-screen__col {
     font-size: 16px;
-  }
-
-  .b-graduates-list__item {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
 
   .b-person-card__old {
