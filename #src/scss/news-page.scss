@@ -218,3 +218,8 @@
 .b-pagination__item_active {
     background: #293033;
 }
+
+.b-pagination {
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
