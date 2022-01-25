@@ -23,6 +23,11 @@
     @media(max-width: 640px) {
         display: none;
     }
+
+    @media(min-width: 1920px){
+        width: 680px;
+        height: 680px;
+    }
 }
 
 .b-article-page {

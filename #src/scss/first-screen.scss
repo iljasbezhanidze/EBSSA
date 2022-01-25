@@ -42,17 +42,12 @@
         justify-content: space-between;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        // height: 100%;
+        margin-top: auto;margin-bottom: auto;
     }
 }
 
-.b-title-box__title {
-    margin-bottom: 40px;
 
-    @include xs() {
-        margin-top: auto;
-    }
-}
 
 .b-main-title {}
 
@@ -67,7 +62,7 @@
     }
 
     @include xs() {
-        margin-bottom: auto;
+        margin-bottom: 40px !important;
     }
 
 }
@@ -152,5 +147,26 @@
         width: 42.95vw;
         bottom: 16.3vw;
         right: -7vw;
+    }
+}
+.b-title-box__title {
+    margin-bottom: 40px;
+
+    &:not(.b-title-box__title_course-page) {
+        @include xs() {
+            margin-top: 40px !important;
+        }
+    }
+}
+
+@media(max-width: 559px){
+    .b-title-box__title_course-page {
+        padding-top: 0 !important;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+
+    .b-title-box.b-first-screen__content.b-first-screen__content_short-width {
+        margin-top: 0 !important;
     }
 }

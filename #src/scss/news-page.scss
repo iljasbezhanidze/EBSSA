@@ -27,6 +27,9 @@
 
     &:not(:last-child) {
         margin-bottom: get-vw(80px);
+        @media(min-width: 1920px) {
+            margin-bottom: 80px;
+        }
     }
 }
 
@@ -77,6 +80,10 @@
     width: 100%;
     column-gap: get-vw(80px);
 
+    @media(min-width: 1920px) {
+        column-gap: 80px;
+        padding: 80px;
+    }
 }
 
 .b-article__title {
@@ -85,6 +92,10 @@
     line-height: 140%;
     margin-bottom: 40px;
     flex: 1 1 calc(50% - get-vw(80px));
+    
+    @media(min-width: 1920px) {
+        flex: 1 1 calc(50% - 80px);
+    }
 }
 
 .b-article__date {

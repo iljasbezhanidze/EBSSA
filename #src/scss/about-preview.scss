@@ -111,6 +111,11 @@
         min-width: 100vw;
         aspect-ratio: 16/9;
     }
+
+    @media(min-width: 1920px){
+        min-width: auto;
+        max-width: var(--container-width);
+    }
 }
 
 .b-video__play {
@@ -135,6 +140,11 @@
         height: get-vw(240px);
         width: get-vw(240px);
         transform: translate(calc(-50% - 20px), -50%);
+    }
+
+    @media(min-width: 1920px) {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -206,6 +216,9 @@
 
     @media(max-width: 560px) {
         margin-bottom: 60px;
+    }
+    @media(min-width: 1920px) {
+        margin-bottom: 120px;
     }
 }
 

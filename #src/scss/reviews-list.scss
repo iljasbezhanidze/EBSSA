@@ -56,6 +56,10 @@
     @include sm() {
         border-top-left-radius: 80px;
     }
+
+    @media(min-width: 1920px) {
+        padding: 60px;
+    }
 }
 
 .b-review__text {

@@ -283,12 +283,17 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        
+        @include xs() {
+            margin-bottom: 0;
+        }
     }
 
     .b-cads-list {
         display: flex;
         flex-direction: column;
     }
+
 }
 
 @media(max-width: 520px) {

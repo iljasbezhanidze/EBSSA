@@ -232,6 +232,10 @@
     height: 53.1vw;
     margin-right: -6.25vw;
 
+    @media(min-width: 1920px){
+        max-width: 1300px;
+    }
+
     @media(max-width: 1270px) {
         margin-right: -4.25vw;
     }
@@ -250,6 +254,10 @@
         transform: translateY(0);
         width: 80vw;
         height: 70vw;
+        margin-right: 0;
+    }
+    @media(min-width: 1920px){
+        width: 1300px;
         margin-right: 0;
     }
 }

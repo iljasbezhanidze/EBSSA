@@ -62,7 +62,10 @@
 }
 
 .b-themathic-gallery__slider {
-    margin-bottom: get-vw(240px);
+    margin-bottom: get-vw(120px);
+    @media(min-width: 1920px) {
+        margin-bottom: 120px;
+    }
 }
 
 .b-slider__nav-title {
@@ -212,6 +215,9 @@
 
         @media(max-width: 520px) {
             padding-right: 50px !important;
+        }
+        @media(min-width: 1920px) {
+            padding: 40px 365px 40px 60px !important;
         }
     }
 }

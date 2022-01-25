@@ -181,6 +181,9 @@ body {
     @include sm() {
         margin-left: 0 !important;
     }
+    @media(min-width: 1920px){
+        margin-left: 0;
+    }
 }
 
 //fixed elements
@@ -229,7 +232,14 @@ body {
         padding-right: 40px;
         padding-left: 40px;
     }
+}
 
+.imitation-blur {
+    &::after {
+        filter: none;
+        backdrop-filter: none;
+        background-color: #1d21247d;
+    }
 }
 
 .mb {
@@ -532,7 +542,7 @@ body {
 
     @include mob() {
         font-size: 14px;
-        --padding-btn-inline: 14px;
+        --padding-btn-inline: 20px;
     }
 }
 
@@ -890,4 +900,12 @@ _btn,
 
 .opacity-none {
     opacity: 1 !important;
+}
+
+.b-video-bcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

@@ -48,6 +48,10 @@ $breakpoint-mobile: 420px;
     @media (min-width: 767px) {
         font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
     }
+
+    @media(min-width: 1920px) {
+        font-size: #{$pcSize + px};
+    }
 }
 
 //usage @include child-counter('> li', '', '\a'){}

@@ -10,7 +10,7 @@
 }
 
 .b-gallery-preview__item {
-    margin-bottom: get-vw(80px);
+    // margin-bottom: get-vw(80px);
 
     @include xs() {
         margin-bottom: 40px;
@@ -53,6 +53,13 @@
     @include mob() {
         margin-top: calc(6.5vw + (12px * 1.4) - get-vw(75px));
     }
+
+    //marker
+    // @media(min-width: 1920px) {
+    //     width: 380px;
+    //     height: 285px;
+    //     margin-top: calc((80px * 2) + (24px * 1.4) - 75px);
+    // }
 }
 
 .b-gallery-counter {

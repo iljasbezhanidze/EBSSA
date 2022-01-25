@@ -5,7 +5,7 @@
     @extend .e-flex-align-center;
     @extend .e-between;
 
-    @media(max-width: 860px) {
+    @media(max-width: 920px) {
         padding-top: 140px;
         flex-direction: column;
         align-items: center;
@@ -25,7 +25,7 @@
 .b-menu-list {
     @extend .e-flex-align-center;
 
-    @media(max-width: 860px) {
+    @media(max-width: 920px) {
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -45,7 +45,7 @@
             margin-right: 20px;
         }
 
-        @media(max-width: 860px) {
+        @media(max-width: 920px) {
             margin-right: 0;
             margin-bottom: 20px;
             width: 100%;
@@ -66,7 +66,7 @@
         font-size: 16px;
     }
 
-    @media(max-width: 860px) {
+    @media(max-width: 920px) {
         width: 100%;
         font-size: 24px;
     }
@@ -80,25 +80,30 @@
     top: 20px;
     transform: translateX(-40%);
 
-    @media(max-width: 860px) {
+    @media(max-width: 920px) {
         left: 10%;
         width: 80px;
         height: 80px;
         transform: none;
         position: absolute;
     }
+
+    @media(min-width: 1920px){
+        width: 180px;
+        height: 180px;
+    }
 }
 
 .b-header__logo_mob {
     display: none;
 
-    @media(max-width: 860px) {
+    @media(max-width: 920px) {
         display: block;
         z-index: 9999;
     }
 }
 
-@media(max-width: 860px) {
+@media(max-width: 920px) {
     .b-header__logo_in-menu {
         transform: rotatey(-90deg);
         transition: transform .3s linear .6s;
@@ -111,7 +116,7 @@
 
 .b-header__menu_main {
 
-    @media(max-width: 860px) {
+    @media(max-width: 920px) {
         margin-bottom: 20px;
     }
 }
@@ -119,7 +124,7 @@
 .b-header__menu_sub {}
 
 .b-menu-list__item_btn {
-    @media(max-width: 860px) {
+    @media(max-width: 920px) {
         margin-top: 20px;
     }
 }
@@ -134,7 +139,7 @@
     overflow: hidden;
     z-index: 999999;
 
-    @media(max-width: 860px) {
+    @media(max-width: 920px) {
         display: block;
     }
 }
@@ -142,7 +147,7 @@
 .b-burger__line {
     width: 40px;
     height: 2px;
-    background-color: var(--accent-color);
+    background-color: #fff;
     position: absolute;
     top: calc(50% - 1px);
     left: 0;
@@ -153,7 +158,7 @@
         @extend .e-pseudo;
         width: 32px;
         height: 2px;
-        background-color: var(--accent-color);
+        background-color: #fff;
         transition: all .3s;
     }
 
@@ -183,7 +188,7 @@
     }
 }
 
-@media(max-width: 860px) {
+@media(max-width: 920px) {
     .b-header.toggle {
         overflow-y: auto;
 

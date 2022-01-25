@@ -94,6 +94,10 @@
     &_color-border {
         border-color: var(--accent-color);
     }
+
+    @media(min-width: 1920px) {
+        padding: 120px 120px 60px;
+    }
 }
 
 .b-tile {

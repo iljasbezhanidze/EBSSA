@@ -24,6 +24,10 @@
             height: get-vw(800px);
         }
     }
+
+    @media (min-width: 1920px) {
+        height: 600px;
+    }
 }
 
 .b-location-img__text-wrapper {
@@ -53,4 +57,7 @@
 
 .b-facilities__item {
     margin-bottom: get-vw(80px);
+    @media(min-width: 1920px){
+        margin-bottom: 80px;
+    }
 }
