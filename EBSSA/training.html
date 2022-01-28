@@ -20,52 +20,7 @@
 </head>
 
 <body>
-    <img class="b-side-frame" src="img/side-frame.svg">
-    <!-- [data-graph-path="value"] data дял открытия
-[data-graph-target="value"] data самого окна -->
 
-<div class="modal">
-    <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="first-modal">
-        <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
-        <div class="b-modal-content">
-            <div class="b-modal-content__nav">
-                <div class="b-modal-content__title">Contacts width EBSSA</div>
-                <form class="b-form b-form_modal b-form-section__wrapper">
-                    <div class="b-form__row">
-                        <div class="b-form__item">
-                            <label class="b-form__label" for="name">Name *</label>
-                            <input class="b-form__input b-form__input_name" type="text" id="name" placeholder="Name"
-                                required="" autocomplete="off">
-                        </div>
-                        <div class="b-form__item">
-                            <label class="b-form__label" for="number">Email *</label>
-                            <input class="b-form__input b-form__input_email" type="text" id="number"
-                                placeholder="petergrifin@putucketbrewery.com" required="" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="b-form__row">
-                        <div class="b-form__item">
-                            <label class="b-form__label" for="text">Message</label>
-                            <textarea class="b-form__textarea" name="" id="" cols="30" rows="10"
-                                placeholder="Message..."></textarea>
-                        </div>
-                    </div>
-                    <div class="b-form__checkbox b-check">
-                        <div class="b-check__checkbox-inner">
-                            <input class="b-check__checkbox" type="checkbox" id="check" required="">
-                            <label class="b-check__label" for="check"></label>
-                            <div class="b-check__agr">
-                                <a class="b-check__text" href="#">I agree to the processing of</a>
-                                <a class="b-check__link" href="#">personal data</a>
-                            </div>
-                        </div>
-                        <button class="b-form__btn b-btn b-btn_arrow" type="submit">Send</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
     <main class="b-page">
         <div class="b-page__header b-page__header_static">
             <div class="b-page__header-container">
@@ -268,6 +223,52 @@
             </div>
         </div>
     </main>
+    <img class="b-side-frame" src="img/side-frame.svg">
+    <!-- [data-graph-path="value"] data дял открытия
+[data-graph-target="value"] data самого окна -->
+
+<div class="modal">
+    <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="first-modal">
+        <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="b-modal-content">
+            <div class="b-modal-content__nav">
+                <div class="b-modal-content__title">Contacts width EBSSA</div>
+                <form class="b-form b-form_modal b-form-section__wrapper">
+                    <div class="b-form__row">
+                        <div class="b-form__item">
+                            <label class="b-form__label" for="name">Name *</label>
+                            <input class="b-form__input b-form__input_name" type="text" id="name" placeholder="Name"
+                                required="" autocomplete="off">
+                        </div>
+                        <div class="b-form__item">
+                            <label class="b-form__label" for="number">Email *</label>
+                            <input class="b-form__input b-form__input_email" type="text" id="number"
+                                placeholder="petergrifin@putucketbrewery.com" required="" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="b-form__row">
+                        <div class="b-form__item">
+                            <label class="b-form__label" for="text">Message</label>
+                            <textarea class="b-form__textarea" name="" id="" cols="30" rows="10"
+                                placeholder="Message..."></textarea>
+                        </div>
+                    </div>
+                    <div class="b-form__checkbox b-check">
+                        <div class="b-check__checkbox-inner">
+                            <input class="b-check__checkbox" type="checkbox" id="check" required="">
+                            <label class="b-check__label" for="check"></label>
+                            <div class="b-check__agr">
+                                <a class="b-check__text" href="#">I agree to the processing of</a>
+                                <a class="b-check__link" href="#">personal data</a>
+                            </div>
+                        </div>
+                        <button class="b-form__btn b-btn b-btn_arrow" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/script.min.js"></script>

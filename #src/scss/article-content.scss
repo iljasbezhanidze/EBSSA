@@ -6,12 +6,7 @@
 
     &__container {
         max-width: 680px;
-    }
 
-    &__text {
-        &:not(:last-child) {
-            margin-bottom: get-vw(80px);
-        }
 
         & p,
         & ul,
@@ -67,15 +62,17 @@
         }
     }
 
-    &__table {
+
+
+
+    table {
+        margin-top: get-vw(80px);
         margin-bottom: get-vw(80px);
         width: 100%;
+        width: 100%;
+        border-collapse: collapse;
+        border: none;
 
-        & table {
-            width: 100%;
-            border-collapse: collapse;
-            border: none;
-        }
 
         & thead {
             border-bottom: 2px solid #EB5757 !important;
@@ -106,6 +103,7 @@
             }
         }
     }
+
 
     &__img {
         margin-bottom: get-vw(120px);
