@@ -19,3 +19,81 @@
         margin-bottom: 20px;
     }
 }
+
+@media(min-width: 900px) {
+    .b-question_courses {
+        display: none;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .b-courses-mob {
+        padding-top: 40px;
+        & .b-question__body-content {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            @include mob(){
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .b-table.b-table_pc {
+        display: none;
+    }
+
+    .b-question__head_wrapper {
+        display: flex;
+        flex-direction: column;
+
+        & .b-question__title {
+            max-width: 100%;
+
+            @media(max-width: 360px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .b-question__title_course {}
+
+    .b-question__date_corse-mob {
+        font-size: 16px;
+
+        @media(max-width: 360px) {
+            font-size: 12px;
+        }
+    }
+
+    .b-question__body-content-wrapper {
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        padding-top: 40px;
+        @include mob(){
+            justify-content: flex-start;
+        }
+    }
+
+    .b-question__col {}
+
+    .b-question__country-title {}
+
+    .b-question__price-title {}
+
+    .b-question__aviable-title {}
+
+    .b-question__country-value {}
+
+    .b-question__price-value {}
+
+    .b-question__aviable-value {}
+
+    .b-question__button {
+        max-width: max-content;
+    }
+}

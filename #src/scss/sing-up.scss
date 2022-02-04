@@ -396,6 +396,12 @@
         margin-top: 40px;
     }
 }
+.b-sing-up {
+    @include mob(){
+        max-width: 100%;
+        flex: initial;
+    }
+}
 
 .b-form__capcha {
     background-color: #1B1F21;

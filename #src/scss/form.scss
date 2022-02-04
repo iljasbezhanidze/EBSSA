@@ -38,6 +38,10 @@
     @include adaptive-font(18, 14);
     display: block;
     white-space: nowrap;
+
+    @include mob(){
+        white-space: normal;
+    }
 }
 
 .b-form__input {

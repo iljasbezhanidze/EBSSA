@@ -322,12 +322,14 @@
 
     .b-card__price,
     .b-card__country {
-        min-width: 47%;
+        
     }
 
     .b-card__country,
     .b-card__date {
-        text-align: right;
+        min-width: 100%;
+        align-items: flex-start;
+        text-align: left;
     }
 
     .b-card__price {

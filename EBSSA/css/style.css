@@ -1123,6 +1123,7 @@ _btn,
       -ms-flex-pack: start;
           justify-content: flex-start;
   justify-items: flex-start;
+  min-height: 800px;
 }
 
 .b-first-screen__content {
@@ -1435,15 +1436,15 @@ _btn,
   position: relative;
   margin-bottom: 6.25vw;
   list-style-type: none;
-  counter-reset: u1hn3rp;
+  counter-reset: uwj5yjm;
 }
 
 .b-tabs__locations > li {
-  counter-increment: u1hn3rp;
+  counter-increment: uwj5yjm;
 }
 
 .b-tabs__locations > li:before {
-  content: "" counter(u1hn3rp) "\a";
+  content: "" counter(uwj5yjm) "\a";
   width: 50px;
   height: 50px;
   border: 4px solid var(--accent-grey);
@@ -1520,15 +1521,15 @@ _btn,
       -ms-flex-align: stretch;
           align-items: stretch;
   list-style-type: none;
-  counter-reset: u1hn3sd;
+  counter-reset: uwj5yk6;
 }
 
 .b-tiles > li {
-  counter-increment: u1hn3sd;
+  counter-increment: uwj5yk6;
 }
 
 .b-tiles > li:before {
-  content: "" counter(u1hn3sd) "\a";
+  content: "" counter(uwj5yk6) "\a";
   color: #101314;
   font-size: 18px;
   font-weight: 700;
@@ -2749,15 +2750,15 @@ _btn,
 
 .b-interactive-map__points-list {
   list-style-type: none;
-  counter-reset: u1hn3sl;
+  counter-reset: uwj5yl6;
 }
 
 .b-interactive-map__points-list > li {
-  counter-increment: u1hn3sl;
+  counter-increment: uwj5yl6;
 }
 
 .b-interactive-map__points-list > li:before {
-  content: "" counter(u1hn3sl) "\a";
+  content: "" counter(uwj5yl6) "\a";
   line-height: 54px;
   position: absolute;
   left: 50%;
@@ -3172,6 +3173,7 @@ _btn,
   -webkit-box-flex: 1;
       -ms-flex: 1 1 35%;
           flex: 1 1 35%;
+  font-weight: 700;
 }
 
 .b-person-review__wrapper {
@@ -4001,15 +4003,15 @@ _btn,
           justify-content: space-between;
   position: relative;
   list-style-type: none;
-  counter-reset: u1hn3t9;
+  counter-reset: uwj5ym5;
 }
 
 .b-form-breadcrumbs > li {
-  counter-increment: u1hn3t9;
+  counter-increment: uwj5ym5;
 }
 
 .b-form-breadcrumbs > li:before {
-  content: "" counter(u1hn3t9) "\a";
+  content: "" counter(uwj5ym5) "\a";
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;
@@ -4824,6 +4826,12 @@ _btn,
   }
 }
 
+@media (min-width: 900px) {
+  .b-question_courses {
+    display: none;
+  }
+}
+
 @media (min-width: 1170px) {
   .b-about-preview__content img,
   .b-about-preview__content iframe {
@@ -5238,6 +5246,12 @@ _btn,
   }
 }
 
+@media (max-width: 1250px) {
+  .b-first-screen__avatar {
+    opacity: 0.3;
+  }
+}
+
 @media (max-width: 1200px) {
   :root {
     --container-width: 100%;
@@ -5262,6 +5276,14 @@ _btn,
 
   .b-main__container_xl {
     margin-left: 70px !important;
+  }
+
+  .b-first-screen {
+    min-height: 700px;
+  }
+
+  .b-first-screen__maze {
+    opacity: 0.1;
   }
 
   .b-about-preview__text {
@@ -6204,6 +6226,93 @@ _btn,
   }
 }
 
+@media (max-width: 900px) {
+  .b-courses-mob {
+    padding-top: 40px;
+  }
+
+  .b-courses-mob .b-question__body-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .b-table.b-table_pc {
+    display: none;
+  }
+
+  .b-question__head_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .b-question__head_wrapper .b-question__title {
+    max-width: 100%;
+  }
+
+  .b-question__date_corse-mob {
+    font-size: 16px;
+  }
+
+  .b-question__body-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 40px;
+  }
+
+  .b-question__button {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 420px) {
+  .b-courses-mob .b-question__body-content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .b-question__body-content-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 360px) {
+  .b-question__head_wrapper .b-question__title {
+    font-size: 16px;
+  }
+
+  .b-question__date_corse-mob {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 780px) {
   .e-section,
   .b-main__section {
@@ -6303,6 +6412,7 @@ _btn,
 
   .b-first-screen {
     height: 92vh;
+    min-height: 550px;
   }
 
   .b-first-screen__avatar {
@@ -7360,6 +7470,10 @@ _btn,
     padding-bottom: 20px;
   }
 
+  .b-dossier-table_value {
+    font-size: 14px;
+  }
+
   .b-person-review__col > * {
     font-size: 16px;
   }
@@ -7715,14 +7829,13 @@ _btn,
             justify-content: space-between;
   }
 
-  .b-card__price,
-  .b-card__country {
-    min-width: 47%;
-  }
-
   .b-card__country,
   .b-card__date {
-    text-align: right;
+    min-width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
   }
 
   .b-card__price {
@@ -7804,6 +7917,13 @@ _btn,
     padding-bottom: 5px;
     padding-top: 5px;
     min-height: 44px;
+  }
+
+  .b-form__label,
+  .b-form__item-title,
+  .b-radios__title,
+  .b-verification-card__label {
+    white-space: normal;
   }
 
   .b-form__btn {
@@ -7958,6 +8078,13 @@ _btn,
 
   .b-form-breadcrumbs__inner {
     display: none;
+  }
+
+  .b-sing-up {
+    max-width: 100%;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
   }
 
   .b-form__capcha {

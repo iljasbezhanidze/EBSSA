@@ -5,6 +5,7 @@
     width: 100%;
     justify-content: flex-start;
     justify-items: flex-start;
+    min-height: 800px;
 
     @include md() {
         height: 90vh;
@@ -12,6 +13,7 @@
 
     @include sm() {
         height: 92vh;
+        min-height: 550px;
     }
 
     @include xs() {
@@ -20,6 +22,10 @@
 
     @media(max-width: 700px) and (orientation: landscape) {
         height: 100vw;
+    }
+
+    @media(max-width: 1200px){
+        min-height: 700px;
     }
 }
 
@@ -120,6 +126,9 @@
         width: 91.25vw;
         height: 104.5vw;
     }
+    @media(max-width: 1250px){
+        opacity: .3;
+    }
 }
 
 .b-first-screen__maze {
@@ -132,6 +141,8 @@
     background-size: contain;
     z-index: 1;
     opacity: .2;
+
+    
 
     @include xl() {
         height: 55.47vw;
@@ -148,7 +159,11 @@
         bottom: 16.3vw;
         right: -7vw;
     }
+    @media(max-width: 1200px){
+        opacity: .1;
+    }
 }
+
 .b-title-box__title {
     margin-bottom: 40px;
 

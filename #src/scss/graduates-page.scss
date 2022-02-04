@@ -91,9 +91,14 @@
 
 .b-dossier-table_stats {
     flex: 1 1 35%;
+    font-weight: 700;
 }
 
-.b-dossier-table_value {}
+.b-dossier-table_value {
+    @include xs(){
+        font-size: 14px;
+    }
+}
 
 .b-person-review__wrapper {
     display: flex;
