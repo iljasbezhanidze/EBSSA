@@ -1123,7 +1123,7 @@ _btn,
       -ms-flex-pack: start;
           justify-content: flex-start;
   justify-items: flex-start;
-  min-height: 800px;
+  min-height: 880px;
 }
 
 .b-first-screen__content {
@@ -1338,11 +1338,11 @@ _btn,
 }
 
 .b-card__first-date {
-  display: block;
+  display: inline-block;
 }
 
 .b-card__last-date {
-  display: block;
+  display: inline-block;
 }
 
 .b-card__col-row_btns .b-card__btn-details:not(:last-child) {
@@ -1436,15 +1436,15 @@ _btn,
   position: relative;
   margin-bottom: 6.25vw;
   list-style-type: none;
-  counter-reset: uwj5yjm;
+  counter-reset: u45naav;
 }
 
 .b-tabs__locations > li {
-  counter-increment: uwj5yjm;
+  counter-increment: u45naav;
 }
 
 .b-tabs__locations > li:before {
-  content: "" counter(uwj5yjm) "\a";
+  content: "" counter(u45naav) "\a";
   width: 50px;
   height: 50px;
   border: 4px solid var(--accent-grey);
@@ -1521,15 +1521,15 @@ _btn,
       -ms-flex-align: stretch;
           align-items: stretch;
   list-style-type: none;
-  counter-reset: uwj5yk6;
+  counter-reset: u45nabu;
 }
 
 .b-tiles > li {
-  counter-increment: uwj5yk6;
+  counter-increment: u45nabu;
 }
 
 .b-tiles > li:before {
-  content: "" counter(uwj5yk6) "\a";
+  content: "" counter(u45nabu) "\a";
   color: #101314;
   font-size: 18px;
   font-weight: 700;
@@ -1994,7 +1994,7 @@ _btn,
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding-top: 0;
   padding-bottom: 0;
   -webkit-transition: all 0.5s;
@@ -2750,15 +2750,15 @@ _btn,
 
 .b-interactive-map__points-list {
   list-style-type: none;
-  counter-reset: uwj5yl6;
+  counter-reset: u45nac6;
 }
 
 .b-interactive-map__points-list > li {
-  counter-increment: uwj5yl6;
+  counter-increment: u45nac6;
 }
 
 .b-interactive-map__points-list > li:before {
-  content: "" counter(uwj5yl6) "\a";
+  content: "" counter(u45nac6) "\a";
   line-height: 54px;
   position: absolute;
   left: 50%;
@@ -2940,6 +2940,12 @@ _btn,
 
 .b-prices__table-wrapper.active {
   display: block;
+}
+
+.b-empty-courses-list {
+  font-size: 22px;
+  text-align: center;
+  opacity: 0.8;
 }
 
 .b-about-first-screen__row {
@@ -4003,15 +4009,15 @@ _btn,
           justify-content: space-between;
   position: relative;
   list-style-type: none;
-  counter-reset: uwj5ym5;
+  counter-reset: u45nacv;
 }
 
 .b-form-breadcrumbs > li {
-  counter-increment: uwj5ym5;
+  counter-increment: u45nacv;
 }
 
 .b-form-breadcrumbs > li:before {
-  content: "" counter(uwj5ym5) "\a";
+  content: "" counter(u45nacv) "\a";
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;
@@ -5301,6 +5307,13 @@ _btn,
   }
 }
 
+@media (max-height: 850px) and (max-width: 1180px) {
+  .b-first-screen__avatar {
+    width: 56.25vw !important;
+    height: 68.5vw !important;
+  }
+}
+
 @media (max-width: 1170px) {
   .e-section,
   .b-main__section {
@@ -6101,6 +6114,14 @@ _btn,
 
   .b-form__parth_large-margin {
     padding-top: 90px;
+  }
+}
+
+@media (max-width: 960px) and (max-height: 850px) {
+  .b-first-screen__avatar {
+    right: -3.33vw !important;
+    width: 63.25vw !important;
+    height: 75.5vw !important;
   }
 }
 
@@ -7839,7 +7860,7 @@ _btn,
   }
 
   .b-card__price {
-    margin-bottom: 0;
+    margin-bottom: 7px;
   }
 
   .b-card__inner {

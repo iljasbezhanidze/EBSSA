@@ -6,6 +6,15 @@
     }
 }
 
+.b-prices__message {
+
+}
+
+.b-empty-courses-list {
+    font-size: 22px;
+    text-align: center;opacity: .8;
+}
+
 .b-prices__table-nav {
     @extend [class*="__nav-title"];
 
@@ -30,13 +39,14 @@
 
     .b-courses-mob {
         padding-top: 40px;
+
         & .b-question__body-content {
             justify-content: center;
             align-items: center;
             display: flex;
             flex-direction: column;
 
-            @include mob(){
+            @include mob() {
                 align-items: flex-start;
             }
         }
@@ -74,7 +84,8 @@
         column-gap: 20px;
         justify-content: center;
         padding-top: 40px;
-        @include mob(){
+
+        @include mob() {
             justify-content: flex-start;
         }
     }

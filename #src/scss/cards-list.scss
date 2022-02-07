@@ -247,11 +247,11 @@
 }
 
 .b-card__first-date {
-    display: block;
+    display: inline-block;
 }
 
 .b-card__last-date {
-    display: block;
+    display: inline-block;
 }
 
 .b-card__col-row_btns .b-card__btn-details:not(:last-child) {
@@ -333,7 +333,7 @@
     }
 
     .b-card__price {
-        margin-bottom: 0;
+        margin-bottom: 7px;
     }
 }
 
