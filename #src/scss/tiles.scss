@@ -17,7 +17,7 @@
 
     @include child-counter('> li', '', '\a') {
         @extend .e-pseudo;
-        color: #101314;
+        color: #fff;
         font-size: 18px;
         font-weight: 700;
         top: get-vw(60px);
