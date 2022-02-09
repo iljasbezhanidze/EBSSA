@@ -185,6 +185,7 @@
         line-height: 1.8;
         margin-bottom: 15px;
 
+
         @include lg() {
             font-size: 18px;
         }
@@ -199,6 +200,10 @@
             @include mob() {
                 margin-bottom: 10px;
             }
+        }
+        @media (max-width: 900px) {
+            opacity: 1;
+            
         }
     }
 

@@ -6,13 +6,12 @@
     }
 }
 
-.b-prices__message {
-
-}
+.b-prices__message {}
 
 .b-empty-courses-list {
     font-size: 22px;
-    text-align: center;opacity: .8;
+    text-align: center;
+    opacity: .8;
 }
 
 .b-prices__table-nav {
@@ -56,55 +55,82 @@
         display: none;
     }
 
-    .b-question__head_wrapper {
-        display: flex;
-        flex-direction: column;
+    .b-table.b-table_pc.b-table_accordeon {
+        display: none;
 
-        & .b-question__title {
-            max-width: 100%;
+        @media (max-width: 900px) {
+            display: table !important;
+        }
 
-            @media(max-width: 360px) {
-                font-size: 16px;
+        @include sm() {
+            width: 100%;
+        }
+        
+        & .b-table__body {
+            @include sm() {
+                margin-bottom: 0;
             }
         }
     }
+}
 
-    .b-question__title_course {}
+.b-table.b-table_pc.b-table_accordeon .b-table__row {
+    @include sm(){
+        margin-bottom: 0 !important;
+        &:after {
+            display: none;
+        }
+    }
+}
 
-    .b-question__date_corse-mob {
-        font-size: 16px;
+.b-question__head_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    & .b-question__title {
+        max-width: 100%;
 
         @media(max-width: 360px) {
-            font-size: 12px;
+            font-size: 16px;
         }
     }
+}
 
-    .b-question__body-content-wrapper {
-        display: flex;
-        column-gap: 20px;
-        justify-content: center;
-        padding-top: 40px;
+.b-question__title_course {}
 
-        @include mob() {
-            justify-content: flex-start;
-        }
+.b-question__date_corse-mob {
+    font-size: 16px;
+
+    @media(max-width: 360px) {
+        font-size: 12px;
     }
+}
 
-    .b-question__col {}
+.b-question__body-content-wrapper {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    padding-top: 40px;
 
-    .b-question__country-title {}
-
-    .b-question__price-title {}
-
-    .b-question__aviable-title {}
-
-    .b-question__country-value {}
-
-    .b-question__price-value {}
-
-    .b-question__aviable-value {}
-
-    .b-question__button {
-        max-width: max-content;
+    @include mob() {
+        justify-content: flex-start;
     }
+}
+
+.b-question__col {}
+
+.b-question__country-title {}
+
+.b-question__price-title {}
+
+.b-question__aviable-title {}
+
+.b-question__country-value {}
+
+.b-question__price-value {}
+
+.b-question__aviable-value {}
+
+.b-question__button {
+    max-width: max-content;
 }
