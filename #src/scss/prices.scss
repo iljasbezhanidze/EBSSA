@@ -60,28 +60,45 @@
 
         @media (max-width: 900px) {
             display: table !important;
+            max-width: 500px;
         }
 
         @include sm() {
             width: 100%;
         }
-        
+
         & .b-table__body {
             @include sm() {
                 margin-bottom: 0;
             }
         }
+        
+    }
+}
+.mt-btn {
+    margin-top: 2vw;
+
+    @include mob(){
+        width: 100%;
+        text-align: center;
+        max-width: 100%;
+        display: block;
     }
 }
 
 .b-table.b-table_pc.b-table_accordeon .b-table__row {
-    @include sm(){
+    @include sm() {
         margin-bottom: 0 !important;
+
         &:after {
             display: none;
         }
     }
+
 }
+
+
+
 
 .b-question__head_wrapper {
     display: flex;

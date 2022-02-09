@@ -103,55 +103,55 @@
 
 
 @include sm() {
-    .b-prices>table {
-        margin-left: auto;
-        margin-right: auto;
-    }
+    // .b-prices>table {
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
 
-    .b-table {
-        display: flex;
-        width: max-content;
-    }
+    // .b-table {
+    //     display: flex;
+    //     width: max-content;
+    // }
 
-    .b-table__row {
-        display: block;
-        float: left;
-    }
+    // .b-table__row {
+    //     display: block;
+    //     float: left;
+    // }
 
-    .b-table__cell {
-        display: block;
+    // .b-table__cell {
+    //     display: block;
 
-    }
+    // }
 
-    .b-table__cell {
-        padding-top: 20px;
-        padding-bottom: 20px;
+    // .b-table__cell {
+    //     padding-top: 20px;
+    //     padding-bottom: 20px;
 
-        &:not(.b-table__cell_title) {
-            white-space: nowrap;
-        }
-    }
+    //     &:not(.b-table__cell_title) {
+    //         white-space: nowrap;
+    //     }
+    // }
 
-    .b-table__cell {
-        padding-right: get-vw(40px);
-        font-size: 14px;
-    }
+    // .b-table__cell {
+    //     padding-right: get-vw(40px);
+    //     font-size: 14px;
+    // }
 
-    .b-table__row:not(:last-child) {
-        border-right: 2px solid #1B1F21;
-    }
+    // .b-table__row:not(:last-child) {
+    //     border-right: 2px solid #1B1F21;
+    // }
 
-    .b-btn_sm {
-        margin-left: auto;
-        margin-right: auto;
-    }
+    // .b-btn_sm {
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
 
 
-    .b-table_mob {
-        display: flex !important;
-        flex-direction: column;
-        width: initial;
-    }
+    // .b-table_mob {
+    //     display: flex !important;
+    //     flex-direction: column;
+    //     width: initial;
+    // }
 
     .b-table__head:before {
         display: none;
@@ -161,15 +161,15 @@
         display: none !important;
     }
 
-    .b-table__corse {
-        display: flex;
+//     .b-table__corse {
+//         display: flex;
 
-        @include lg() {
-            & .b-table__row .b-table__cell:last-child {
-                margin-bottom: 10px;
-            }
-        }
-    }
+//         @include lg() {
+//             & .b-table__row .b-table__cell:last-child {
+//                 margin-bottom: 10px;
+//             }
+//         }
+//     }
 }
 
 .b-table__head {
