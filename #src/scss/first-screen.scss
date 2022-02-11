@@ -167,14 +167,8 @@
         right: -7vw;
     }
 
-    @include md() {
-        width: 42.95vw;
-        bottom: 16.3vw;
-        right: -7vw;
-    }
-
-    @media(max-width: 1200px) {
-        opacity: .1;
+    @media(max-width: 1250px) {
+        display: none;
     }
 }
 

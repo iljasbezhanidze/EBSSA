@@ -1437,15 +1437,15 @@ _btn,
   position: relative;
   margin-bottom: 6.25vw;
   list-style-type: none;
-  counter-reset: u0j3ku7;
+  counter-reset: uq1sqq1;
 }
 
 .b-tabs__locations > li {
-  counter-increment: u0j3ku7;
+  counter-increment: uq1sqq1;
 }
 
 .b-tabs__locations > li:before {
-  content: "" counter(u0j3ku7) "\a";
+  content: "" counter(uq1sqq1) "\a";
   width: 50px;
   height: 50px;
   border: 4px solid var(--accent-grey);
@@ -1522,15 +1522,15 @@ _btn,
       -ms-flex-align: stretch;
           align-items: stretch;
   list-style-type: none;
-  counter-reset: u0j3kuu;
+  counter-reset: uq1sqq5;
 }
 
 .b-tiles > li {
-  counter-increment: u0j3kuu;
+  counter-increment: uq1sqq5;
 }
 
 .b-tiles > li:before {
-  content: "" counter(u0j3kuu) "\a";
+  content: "" counter(uq1sqq5) "\a";
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -2752,15 +2752,15 @@ _btn,
 
 .b-interactive-map__points-list {
   list-style-type: none;
-  counter-reset: u0j3kuv;
+  counter-reset: uq1sqqq;
 }
 
 .b-interactive-map__points-list > li {
-  counter-increment: u0j3kuv;
+  counter-increment: uq1sqqq;
 }
 
 .b-interactive-map__points-list > li:before {
-  content: "" counter(u0j3kuv) "\a";
+  content: "" counter(uq1sqqq) "\a";
   line-height: 54px;
   position: absolute;
   left: 50%;
@@ -4052,15 +4052,15 @@ _btn,
           justify-content: space-between;
   position: relative;
   list-style-type: none;
-  counter-reset: u0j3kv6;
+  counter-reset: uq1sqra;
 }
 
 .b-form-breadcrumbs > li {
-  counter-increment: u0j3kv6;
+  counter-increment: uq1sqra;
 }
 
 .b-form-breadcrumbs > li:before {
-  content: "" counter(u0j3kv6) "\a";
+  content: "" counter(uq1sqra) "\a";
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;
@@ -4947,7 +4947,7 @@ _btn,
   }
 
   .b-tiles__item {
-    padding: 120px 120px 60px;
+    padding: 6.25vw 3.125vw 3.125vw;
   }
 
   .b-about-preview img,
@@ -5299,6 +5299,10 @@ _btn,
   .b-first-screen__avatar {
     opacity: 0.3;
   }
+
+  .b-first-screen__maze {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -5329,10 +5333,6 @@ _btn,
 
   .b-first-screen {
     min-height: 700px;
-  }
-
-  .b-first-screen__maze {
-    opacity: 0.1;
   }
 
   .b-about-preview__text {
@@ -5852,12 +5852,6 @@ _btn,
     right: -29.33vw;
     width: 76.25vw;
     height: 87.5vw;
-  }
-
-  .b-first-screen__maze {
-    width: 42.95vw;
-    bottom: 16.3vw;
-    right: -7vw;
   }
 
   .b-row-articles__item {
